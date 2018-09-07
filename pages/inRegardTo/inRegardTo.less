@@ -1,0 +1,391 @@
+.inRegardTo{
+    width: 1200px;
+    margin: 20px auto;
+    .inRegardTo_left{
+        width: 260px;
+        height: 210px;
+        float: left;
+        border-radius: 4px;
+        background: #FFF;
+        li{
+            color: #333;
+            font-size: 14px;
+            height: 32px;
+            line-height: 32px;
+            margin: 16px 0;
+            padding-left: 28px;
+            cursor: pointer;
+            border-left: 4px solid #fff;
+        }
+//      li:nth-child(1){
+//          border-left: 4px solid #ff3e08;
+//      }
+        li.active{
+            border-left:4px solid #ff3e08;
+        }
+    }
+    .inRegardTo_right{
+        width: 920px;
+        float: right;
+        background: #FFF;
+        //关于我们
+        .aboutUs{
+            width: 100%;
+            color: #4d4d4d;
+            padding-bottom: 30px;
+            .aboutUs_top{
+                width: 100%;
+                height: 67px;
+                line-height: 67px;
+                color: #333333;
+                font-size: 16px;
+                padding-left: 30px;
+                border-bottom: 1px solid #e1e1e1;
+            }
+            img{
+                display: block;
+                margin: 20px auto;
+                width: 860px;
+                height: 400px;
+            }
+            p{
+                margin: 0px 30px;
+                line-height: 30px;
+                span{
+                    font-weight: 600;
+                }
+            }
+            h2{
+                font-weight: 600;
+                line-height: 30px;
+                margin: 2px 30px;
+            }
+        }
+        //招聘信息
+        .Recruitment{
+            .Recruitment_top{
+                width: 100%;
+                height: 67px;
+                line-height: 67px;
+                color: #333333;
+                font-size: 16px;
+                padding-left: 30px;
+                border-bottom: 1px solid #e1e1e1;
+            }
+            .Recruitment_content{
+                width: 100%;
+                padding:0 30px 30px 30px;
+                li{
+                    display: block;
+                    margin: 20px auto;
+                    width: 860px;
+                    height: 140px;
+                    padding: 0 20px;
+                    background: #f7f7f7;
+                    ul{
+                        display: block;
+                        width: 100%;
+                    }
+                    li{
+                        width: 25%;
+                        height: 58px;
+                        line-height: 58px;
+                        float: left;
+                        text-align: center;
+                        font-size: 15px;
+                        border-bottom: 1px solid #e1e1e1;
+                        color: #666;
+                        margin: 0 0 15px 0;
+                        padding: 0;
+                    }
+                    li:nth-child(1){
+                        text-align: left;
+                        color: #ff3e08;
+                        padding-left: 12px;
+                    }
+                    li:nth-last-child(1){
+                        text-align: right;
+                        padding-right: 12px;
+                    }
+                    .describe{
+                        display: block;
+                        span{
+                            display: block;
+                            height: 20px;
+                            line-height: 20px;
+                            width: 720px;
+                            float: left;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                        a{
+                            margin-right: 42px;
+                            float: right;
+                            padding-top: 2px;
+                            color: #ff3e08;
+                            cursor: pointer;
+                        }
+                    }
+                    //招聘详情
+                    .recruitmentDetails{
+                        display: none;
+                        width: 100%;
+                        padding: 0 10px;
+                        float: left;
+                        margin-bottom: 30px;
+                        .headline{
+                            width: 100%;
+                            height: 54px;
+                            line-height: 54px;
+                            margin-bottom: 10px;
+                            display: block;
+                            border-bottom: 1px solid #e1e1e1;
+                            span{
+                                display: block;
+                                width: 90px;
+                                height: 54px;
+                                border-bottom: 2px solid #ff3e08;
+                            }
+                        }
+                        p{
+                            line-height: 28px;
+                        }
+                        .detailsSpan{
+                            display: block;
+                            margin-top: 70px;
+                        }
+                        .returnlist{
+                            width: 150px;
+                            height: 34px;
+                            display: block;
+                            line-height: 34px;
+                            background: #ff3e08;
+                            color: #fff;
+                            cursor: pointer;
+                            margin-top: 10px;
+                            border-radius: 4px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        //行业新闻
+        .journalism{
+            width: 100%;
+            color: #4d4d4d;
+            padding-bottom: 30px;
+            .aboutUs_top{
+                width: 100%;
+                height: 67px;
+                line-height: 67px;
+                color: #333333;
+                font-size: 16px;
+                padding-left: 30px;
+                border-bottom: 1px solid #e1e1e1;
+                li{
+                    float: left;
+                    font-size: 16px;
+                    margin-right: 50px;
+                    height: 66px;
+                    padding: 0 5px;
+                    cursor: pointer;
+                }
+                li:nth-child(1){
+                    border-bottom: 2px solid #ff3e08;
+                }
+            }
+            .company ,.industry{
+                display: block;
+                width: 860px;
+                margin: 0 auto;
+                margin-bottom: 25px;
+                .company_list{
+                    display: block;
+                    width: 860px;
+                    height: 126px;
+                    margin: 20px auto;
+                    margin-bottom: 25px;
+                    border-bottom: 1px dashed #ccc;
+                }
+                .company_img{
+                    width: 135px;
+                    height: 100px;
+                    float: left;
+                    margin-right: 15px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .company_content{
+                    display: block;
+                    width: 710px;
+                    float: left;
+                    span{
+                        font-size: 16px;
+                        color: #333;
+                        display: block;
+                        margin-bottom: 15px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                    p{
+                        line-height: 24px;
+                        color: #666;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                    }
+                    .company_date{
+                        color: #999;
+                        font-weight: 500;
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .industry{
+                // display: none;
+            }
+        }
+        .relation{
+            .relation_top{
+                width: 100%;
+                height: 67px;
+                line-height: 67px;
+                color: #333333;
+                font-size: 16px;
+                padding-left: 30px;
+                border-bottom: 1px solid #e1e1e1;
+            }
+            .relation_content{
+                width: 100%;
+                display: block;
+                padding:0 30px 30px 30px;
+                .onlineMessageS{
+                    display: none;
+                    .particular{
+                        padding: 0 20px;
+                        margin-bottom: 30px;
+                        display: block;
+                        span{
+                            display: block;
+                            line-height: 34px;
+                            color: #4d4d4d;
+                        }
+                        input{
+                            width: 360px;
+                            height: 40px;
+                            padding-left: 15px;
+                            margin-top: 15px;
+                            margin-right: 52px;
+                            border: 1px solid #d1d1d1;
+                        }
+                        input.phone{
+                            margin-right: 0;
+                            width: 374px;
+                        }
+                        textarea{
+                            width: 790px;
+                            height: 126px;
+                            margin-top: 32px;
+                            padding: 13px 20px;
+                            resize: none;
+                            border: 1px solid #d1d1d1;
+                        }
+                        .submitMessage{
+                            width: 124px;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            margin-top: 15px;
+                            cursor: pointer;
+                            background: #ff3e08;
+                            color: #fff;
+                        }
+                    }
+                }
+                .customerService{
+                    display: block;
+                    .particular{
+                        padding: 0 20px;
+                        margin-bottom: 30px;
+                        display: block;
+                        span{
+                            display: block;
+                            color:  #4d4d4d;
+                            line-height: 30px;
+                            img{
+                                margin-right: 10px;
+                            }
+                        }
+                        .onlineMessage{
+                            width: 124px;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            margin-top: 15px;
+                            cursor: pointer;
+                            background: #ff3e08;
+                            color: #fff;
+                        }
+                    }
+                }
+                .relationDiv{
+                    margin: 20px 20px 10px 20px;
+                    display: block;
+                    border-bottom: 1px solid #e1e1e1;
+                    .relationDiv_top{
+                        height: 54px;
+                        width: 90px;
+                        line-height: 54px;
+                        border-bottom: 2px solid #ff3e08;
+                        color: #4d4d4d;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        div:nth-child(1) {
+            display: block;
+        }
+        div{
+            display: none;
+        }
+    }
+    //清除浮动
+    .clear{
+        clear:both
+    }
+}
+
+
+//新闻element分页样式修改
+.journalism /deep/ .el-pagination__total ,
+.journalism /deep/ .el-pagination__jump{
+    display: none;
+}
+.journalism /deep/ .el-pager li{
+    background: #f4f3f3 !important;
+    color: #4d4d4d;
+}
+.journalism /deep/ .el-pager li:hover{
+    color: #4d4d4d !important;
+}
+.journalism /deep/ li.active{
+    background: none !important;
+    color: #ff3e08 !important;
+}
+.journalism /deep/ .el-pagination{
+    margin-right: 0 !important;
+}
+.journalism /deep/ .is-background .btn-prev ,
+.journalism /deep/ .is-background .btn-next{
+    width: 68px;
+    height: 28px;
+    border:1px solid #ccc;
+    background: #f4f3f3;
+}

@@ -1,0 +1,270 @@
+#login{
+  width: 100%;
+  .c-headerBotoom{
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px
+    rgba(0, 0, 0, 0.18);
+    .c-content{
+      position: relative;
+      width: 1200px;
+      height: 80px;
+      margin: 0 auto;
+      line-height: 80px;
+      .logo{
+        display: inline-block;
+        position: absolute;
+        top:0;
+        left: 0;
+        img{
+          vertical-align: middle;
+          margin-right: 20px;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        span{
+          display: inline-block;
+          height: 50px;
+          line-height: 50px;
+          padding-left: 20px;
+          border-left: 1px solid #E0E0E0;
+          font-family: MicrosoftYaHei;
+          font-size: 24px;
+          color: #545454;
+        }
+      }
+    }
+  }
+  .loginCenter{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url("~assets/images/loginAndRegister/bg_img.png") no-repeat;
+    background-size: 100% 100%;
+    .loginframe{
+      position: absolute;
+      top: 100px;
+      left: 62%;
+      width: 340px;
+      height: 360px;
+      background-color: #FFF8EC;
+      border-radius: 4px;
+      overflow: hidden;
+      .loginHeadline{
+        position: relative;
+        height: 50px;
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid #ccc;
+        line-height: 50px;
+        background-color: #FFF8EC;
+        .text{
+          font-size: 18px;
+          line-height: 50px;
+          color: #333;
+        }
+        span:nth-child(2){
+          position: absolute;
+          top:0;
+          right: 31px;
+          display: inline;
+          line-height: 50px;
+          vertical-align: middle;
+        }
+        span:nth-child(3){
+          position: absolute;
+          top:0;
+          right: -17px;
+          display: inline;
+          line-height: 50px;
+          vertical-align: middle;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+      .loginForm{
+        width: 90%;
+        margin: 0 auto;
+        transition: 0.5s;
+        div{
+          width: 100%;
+          height: 42px;
+          line-height: 42px;
+          border-radius: 2px;
+          border: solid 1px #dbdbdb;
+          margin: 20px 0px;
+          label{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #dbdbdb;
+            text-align: center;
+            img{
+              vertical-align: middle;
+            }
+          }
+        }
+        p{
+          position: relative;
+          input{
+            padding-left: 0;
+            width: 14px;
+            height: 14px;
+          }
+          a{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-family: PingFang-SC-Regular;
+            font-size: 14px;
+            color: #8c8c8c;
+          }
+        }
+        .button{
+          text-align: center;
+          line-height: 42px;
+          background: #ff3a04;
+          font-family: MicrosoftYaHei;
+          font-size: 16px;
+          cursor: pointer;
+          a{
+            display: block;
+            height: 100%;
+            color: #fff;
+          }
+        }
+        label{
+          position: absolute;
+        }
+        input{
+          width: 100%;
+          height: 98%;
+          padding-left: 50px;
+        }
+      }
+      .loginSuccessed{
+        position: absolute;
+        top: 50px;
+        font-family: MicrosoftYaHei;
+        left: 100%;
+        margin: 0 auto;
+        padding-top: 10px;
+        width: 90%;
+        height: 250px;
+        text-align: center;
+        transition: 0.5s;
+        .outLogin{
+          text-align: right;
+          font-size: 14px;
+          line-height: 24px;
+          color: #666666;
+          span{
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+        .headPortrait{
+          margin: 20px auto 5px;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          overflow: hidden;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .userWelcome{
+          font-size: 16px;
+          line-height: 30px;
+          color: #ff3e08;
+        }
+        .WelcomeDes{
+          font-size: 14px;
+          line-height: 26px;
+          color: #666666;
+          letter-spacing: 3px;
+        }
+        .uerMsgs{
+          display: flex;
+          margin-top: 30px;
+          width: 100%;
+          font-size: 14px;
+          line-height: 24px;
+          font-family: MicrosoftYaHei;
+          li{
+            flex: 1;
+            .number{
+              font-weight: bold;
+              color: #ff3e08;
+            }
+            .textDes{
+              color: #333333;
+            }
+            &:nth-child(1){
+             border-right: 1px solid #c6c6c6;
+            }
+            &:nth-child(2){
+              border-right: 1px solid #c6c6c6;
+            }
+          }
+        }
+      }
+      .scanCodeWrap{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        .text{
+          display: inline-block;
+          padding-left: 14px;
+          font-family: MicrosoftYaHei;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: left;
+          margin: 25px 0 30px 0;
+          color: #333333;
+        }
+      }
+      .scanCodeImg{
+        height: 150px;
+        img{
+          max-height: 100%;
+        }
+      }
+      .scanSucceed{
+
+      }
+      .toList{
+        position: absolute;
+        bottom: 10px;
+        left: 18px;
+        width: 90%;
+        border: 0;
+        a{
+          font-family: MicrosoftYaHei;
+          font-size: 12px;
+          color: #666;
+          line-height: 42px;
+          margin-right: 10px;
+          cursor: pointer;
+          &:nth-child(4){
+            position: absolute;
+            right: 0;
+            font-size: 14px;
+            color: #ff3a04;
+          }
+          img{
+            vertical-align: middle;
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+  #footindex{
+    margin-top: 0;
+  }
+}

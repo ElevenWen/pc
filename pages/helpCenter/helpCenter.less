@@ -1,0 +1,80 @@
+.helpCenter{
+    width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+//  border:1px solid red;
+
+    .helpCenterL{
+        width: 210px;
+        height: 466px;
+        float: left;
+        padding: 15px;
+        background: #FFF;
+        h2{
+            color: #333;
+            font-size: 20px;
+            margin-top: 18px;
+            text-align: center;
+        }
+        span{
+            display: block;
+            width: 100%;
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+        li{
+            display: block;
+            text-align: center;
+            line-height: 30px;
+            color: #4d4d4d;
+            span{
+                width: 76px;
+                height: 15px;
+                font-size: 16px;
+                color: #333;
+                line-height: 15px;
+                padding-left: 5px;
+                margin: 10px auto;
+                display: block;
+                border: none;
+                border-left: 2px solid red;
+            }
+            ul{
+                li{
+                    cursor: pointer;
+                }
+                li:hover{
+                    color: #ff3e08 ;
+                }
+            }
+        }
+        li:nth-child(1) ul li:nth-child(1){
+            color: #ff3e08;
+        }
+    }
+    .helpCenterR{
+        width: 968px;
+        min-height: 500px;
+        float: right;
+        background: #FFF;
+        div{
+            display: none;
+//          padding: 0 30px;
+            border-bottom: 1px solid #efefef;
+            h2{
+                height: 60px;
+                line-height: 60px;
+                font-size: 16px;
+                color: #333;
+            }
+        }
+        .flowPath{
+            display: block;
+        }
+    }
+}

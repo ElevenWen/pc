@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+.particulars{
+	width: 100%;
+    margin-top: -10px;
+	margin-bottom: 100px;
+}
+.particulars .announcement{
+	width: 100%;
+	height: 30px;
+	background: #fff;
+}
+.location {
+	height: 40px;
+    line-height: 35px;
+    color: #666;
+    font-size: 12px;
+    padding: 5px;
+}
+.location a{
+	color: #666;
+    font-size: 12px;
+}
+.location > span{
+	color: #4D4D4D;
+}
+.evaluate {
+	border:1px solid #CCC;
+	background-color: #FFF;
+	width: 100%;
+	height: 500px;
+}
+.evaluate .evaluate_left {
+	width: 360px;
+    border-right: 1px solid #CCC;
+    height: 420px;
+    margin: 40px 0;
+    padding: 0 40px;
+	float: left;
+}
+.evaluate .evaluate_left span {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+    font-size: 14px;
+	color: #4D4D4D;
+    padding-top: 20px;
+	text-align: center;
+}
+.evaluate .evaluate_left span:nth-child(3) {
+	color: #FF3E08;
+}
+.evaluate .evaluate_left span:nth-child(4) {
+	font-size: 12px;
+	color: #666666;
+}
+.evaluate .evaluate_right{
+	margin: 40px 0;
+    padding: 0 70px;
+    float: right;
+    height: 420px;
+    width: 838px;
+}
+.evaluate .evaluate_right table{
+	margin-top: 20px;
+}
+.evaluate .evaluate_right .commodity_name {
+	width: 110px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: left;
+    margin-top: 5px;
+    display: block;
+    float: left;
+}
+.evaluate .evaluate_right .commodity_text {
+	width: 550px;	
+	float: right;
+}
+.act{
+	position: relative;
+}
+.act i{
+    display: none;
+	color: #ccc;
+	position: absolute;
+	right: 4px;
+	top: -10px;
+	font-size: 12px;
+	z-index: 8;
+}
+.add_custom .act.acti{
+	background: url(~assets/images/personalCenter/order/select_box.png)bottom right no-repeat;
+}
+.commodity_text .grade{
+	font-size: 20px;
+	color: #FF3E08;
+	margin-left: 20px;
+	vertical-align: inherit;
+	float: left;
+	line-height: 25px;
+}
+.commodity_text .layui-input-block{
+	margin-left: 0px;
+	position: relative;
+}
+.commodity_text .layui-btn {
+    height: 40px;
+    width: 130px;
+    line-height: 40px;
+    background-color: #FF3E08;
+	font-size: 16px;
+	color: white;
+}
+.evaluate .evaluate_right .commodity_text span {
+	display: block;
+	cursor: pointer;
+	float: left;
+	width: 96px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 20px 6px 0;
+	text-align: center;
+	border:1px solid #CCC;
+}
+.evaluate_right .layui-textarea {
+    width: 540px;
+	height: 120px;
+	border: 1px solid #eee;
+	padding: 12px 14px 11px 15px;
+	resize : none;
+}
+.commodity_text .count{
+	border: none !important;
+    font-size: 12px;
+    position: absolute;
+	color: #B3B3B3;
+    // background: #fff;
+    height: 20px !important;
+	line-height: 20px !important;
+	bottom: -4px;
+	right: 0px;
+	font-family: SimSun;
+}
+.commodity_text .count a{
+	color: #B3B3B3;
+}
+.commodity_text span:hover{
+	border-color: #ff3e08 !important;
+}
+.verification_hint{
+	display: none;
+}
+.verification_hint td{
+	font-size: 12px;
+    color: #DF3D3E;
+    vertical-align: inherit;
+    padding-left: 110px;
+    margin-top: -5px;
+    display: block;
+    height: 20px;
+}
+.img_yes{
+	width: 20px;
+	height: 20px;
+	border:1px solid red;
+}
+.verification:hover{
+	border:1px solid #FF3E08 !important;
+}
+.layui-form-item {
+    margin-bottom: 35px;
+    clear: both;
+}
+.c-PersonalHead .middle1200 .topnav.active {
+  background: none;
+}
+.c-PersonalHead .middle1200 #shouye{
+  background: none;
+}
+.c-PfootContainWrap {
+	width: 100%;
+	float: left;
+}
+#order_quantity .layui-laypage{
+	margin-right: 20px;
+}
+
+/*追加评论*/
+.evaluate .evaluate_right .commodity_chase_evaluate{
+	margin-top: 10px;
+}
+.commodity_chase_evaluate tr{
+	height: 32px;
+	line-height: 32px;
+}
+.commodity_chase_evaluate tr td span{
+	width: 75px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-right: 10px;
+	background-color: #F2F6FA;
+}
+.commodity_tr td{
+	padding-top: 40px;
+    margin-top: 20px !important;
+    border-top: 1px dashed #E6DFFE;
+}
+
+
+
+
+
+/*评分开始*/
+ul, li, ol { list-style: none; }
+/* 重置文本格式元素 */
+a { text-decoration: none; cursor: pointer; color:#333333; font-size:14px;}
+a:hover { text-decoration: none; }
+.clearfix::after{ display:block; content:''; height:0; overflow:hidden; clear:both;} 
+/*星星样式*/
+.content{ width:600px; margin:0 auto; padding-top:20px;}
+.title{ 
+	/*font-size:14px; */
+/*background:#dfdfdf; */
+/*padding:10px; margin-bottom:10px;*/
+}
+.block{ 
+	/*width:100%; margin:0 0 20px 0; padding-top:10px; padding-left:50px; line-height:21px;*/
+}
+.block .star_score{ float:left;}
+.star_list{height:21px;margin:50px; line-height:21px;}
+.block p,.block .attitude{ padding-left:20px; line-height:21px; display:inline-block;}
+.block p q{ color:#C00; font-size:16px; font-family:Georgia, "Times New Roman", Times, serif;}
+.star_score { background:url(~assets/images/personalCenter/order/stars2.png); width:146px; height:24px;  position:relative; }
+.star_score a{ height:21px; display:block; text-indent:-999em; position:absolute;left:0;}
+.star_score a:hover{ background:url(~assets/images/personalCenter/order/stars2.png);left:0;}
+.star_score a.clibg{ background:url(~assets/images/personalCenter/order/stars2.png);left:0;}
+#starttwo .star_score { background:url(~assets/images/personalCenter/order/lanrentuku.png) ;}
+#starttwo .star_score a:hover{ background:url(~assets/images/personalCenter/order/starsy.png);left:0;}
+#starttwo .star_score a.clibg{ background:url(~assets/images/personalCenter/order/starsy.png);left:0;}
+/*星星样式*/
+.show_number{ 
+	/*padding-left:50px; padding-top:20px;*/
+}
+.show_number li{
+	/*width:240px; border:1px solid #ccc; padding:10px; margin-right:5px; margin-bottom:20px;*/
+}
+.atar_Show{background:url(~assets/images/personalCenter/order/stark2.png); width:160px; height:21px;  position:relative; float:left; }
+.atar_Show p{ background:url(~assets/images/personalCenter/order/stars2.png);left:0; height:21px; width:134px;}
+.show_number li span{ display:inline-block; line-height:21px;}
+/*评分结束*/
+
+
+
+.customTag{
+	border: none !important;
+	width: auto !important;
+}
+.el-button{
+	width: 96px;
+    height: 34px;
+	// line-height: 35px;
+	border-radius: 0;
+	border: 1px solid #CCC;
+	img{
+		vertical-align: middle;
+	}
+}
+.el-button:focus, .el-button:hover{
+	background-color: #fff;
+	color: #ff3e08;
+	border-color: #ff3e08;
+
+}
+.el-button--small{
+	padding-left: 5px;
+}
+.el-tag{
+	border-radius: 0;
+	background-color: #fff;
+	color: #545454;
+}
+.input-new-tag{
+	width: 96px;
+}
+.errNotice{
+	display: none;
+}
+// .verification_hint span{
+// 	display: block !important;
+// }
+
+.checkTag,.notice,.errNotice,.noMore{
+	margin-top: 10px;
+}

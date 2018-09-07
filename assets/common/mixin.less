@@ -1,0 +1,352 @@
+@charset :"utf-8";
+
+//颜色
+.c(@c) {
+    color: @c;
+}
+
+//宽度
+.w(@w) {
+    width: @w;
+}
+
+//高度
+.h(@h) {
+    height: @h;
+}
+
+//字体大小
+.f20(@f: 20px) {
+    font-size: @f
+}
+
+.f16(@f: 16px) {
+    font-size: @f
+}
+
+.f12(@f: 12px) {
+    font-size: @f
+}
+
+// 背景色
+.bg(@c: @FFF) {
+    background: @c
+}
+
+//行高
+.lh(@lh) {
+    line-height: @lh;
+}
+
+//水平居中
+.wrap(@w: 1200px, @minw: 1200px, @m: 0 auto) {
+    width: @w;
+    margin: 0 auto;
+    min-width: @minw;
+}
+
+// 边框
+.border( @c, @w: 1px, @style: solid) {
+    border: @w @style @c
+}
+
+// 背景图片
+.bgImg( @img, @XY: center, @p: no-repeat, @url: "../Image") {
+}
+
+//填充
+.padding(@lr) {
+    padding: 0 @lr;
+}
+
+//相对定位
+.pR() {
+    position: relative;
+}
+
+//绝对定位
+.pA() {
+    position: absolute;
+}
+
+// 浮动
+.fl(@left: left) {
+    float: @left;
+}
+
+
+
+//清除浮动
+.clearFloat() {
+    z-zoom: 1;
+    /*为兼容IE6,IE7*/
+    &::after {
+        content: ".";
+        visibility: hidden;
+        height: 0;
+        clear: both;
+        display: block;
+    }
+}
+
+//文本省略号-- 显示2行
+.textIndex2(@w ,
+@clamp: 2) {
+    width: @w;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: box;
+    display: -webkit-box;
+    -webkit-line-clamp: @clamp;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+}
+
+//文本省略号 --- 显示一行
+.textIndex1(@w) {
+    width: @w;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//公用宽高背景
+.common-w-h-border-bg(whbg,
+@w,
+@h,
+@bgC: #fff)when(whbg=whbg) {
+    width: @w;
+    height: @h;
+    background: @bgC;
+}
+
+
+
+
+
+// 手形
+.cursor {
+    cursor: pointer;
+}
+
+.keyword {
+    color: #ff3e08;
+}
+
+//下拉三角
+.afterSan(@t,
+@l,
+@c: #ff3e08) {
+    position: absolute;
+    top: @t;
+    left: @l;
+    border: 5px solid transparent;
+    border-top-color: @c;
+    width: 0;
+    height: 0;
+}
+
+//下拉三角 (伪元素)
+.afterSanSuper(@t,
+@l,
+@c: #ff3e08) {
+    &:after {
+        position: absolute;
+        top: @t;
+        left: @l;
+        display: block;
+        content: "";
+        border: 5px solid transparent;
+        border-top-color: @c;
+        width: 0;
+        height: 0;
+    }
+}
+
+
+//公用样式 padding margin
+//主题高亮
+.themeColor {
+    color: #ff3308;
+}
+
+.p_CC {
+    color:red;
+}
+
+
+//#4D4D4D 
+.p_4D {
+    color:#4D4D4D;
+}
+//#666666
+.p_666{
+    color:#666666;
+}
+
+//#8C8C8C
+.p_8C {
+     color:#8C8C8C;
+}
+
+.p_fl {
+    float: left;
+}
+
+.p_fr {
+    float: right;
+}
+
+.p_tr {
+    text-align: right;
+}
+
+.p_100 {
+    width: 100%;
+}
+
+.p_c666 {
+    color: #666666;
+}
+
+.p_ft14 {
+    font-size: 14px;
+}
+
+.p_pt10 {
+    padding-top: 10px;
+}
+
+.p_pr10 {
+    padding-right: 10px;
+}
+
+.p_pb10 {
+    padding-bottom: 10px;
+}
+
+.p_pl10 {
+    padding-left: 10px;
+}
+
+.p_ml15 {
+    margin-left: 15px;
+}
+
+.p_mr10 {
+    margin-right: 10px;
+}
+
+.p_mr30 {
+    margin-right: 30px;
+}
+
+.p_mr40 {
+    margin-right: 40px;
+}
+
+.p_mb5 {
+    margin-bottom: 5px;
+}
+
+.p_mb10 {
+    margin-bottom: 10px;
+}
+
+.p_mb15 {
+    margin-bottom: 15px;
+}
+
+.p_mb20 {
+    margin-bottom: 20px;
+}
+
+.p_mt10 {
+    margin-top: 10px;
+}
+
+.p_mt20 {
+    margin-top: 20px;
+}
+
+.p_mt40 {
+    margin-top: 40px;
+}
+
+.p_c359af8 {
+    color: #359af8;
+}
+
+.p_cff3e08 {
+    color: #FF3E08;
+}
+
+.p_line_dashed {
+    border-bottom: 1px dashed #DDDDDD;
+    width: 100%;
+}
+
+//分页公共样式
+.layui-laypage {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 0;
+    float: right;
+}
+
+.layui-laypage a,
+.layui-laypage span {
+    display: inline-block;
+    background: #F4F3F3!important;
+    vertical-align: middle;
+    padding: 0 15px;
+    border: 1px solid #e2e2e2;
+    height: 26px;
+    line-height: 28px;
+    margin: 0 10px 5px 0;
+    width: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
+}
+
+.layui-laypage span {
+    color: #999;
+    font-weight: 700;
+    background: #F4F3F3!important;
+    height: 26px;
+    margin: 23px 10px 23px 0;
+    text-align: center;
+}
+
+.layui-laypage a.layui-laypage-next,
+.layui-laypage a.layui-laypage-prev {
+    width: 65px;
+    padding: 0;
+}
+
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 0;
+}
+
+.layui-laypage .layui-laypage-curr em {
+    position: relative;
+    color: #ff0000;
+    font-weight: 400;
+}
+
+.layui-laypage span.layui-laypage-curr {
+    border: 0;
+}
+
+.c-PheaderContainWrap {
+    background: white;
+}

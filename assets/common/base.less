@@ -1,0 +1,128 @@
+
+.bg-image( @color ){
+  background-repeat: no-repeat; 
+}
+
+
+.border-1px(@color) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.0), only screen and (min-device-pixel-ratio: 1.0) {
+      -webkit-transform: scaleY( 0.7,0.7);
+      transform: scaleY( 0.7,0.7);
+  }
+}
+
+
+.border-1px(@color) {
+  @media only screen and (-webkit-min-device-pixel-ratio:2.0), only screen and (min-device-pixel-ratio: 2.0) {
+      -webkit-transform: scaleY( 0.5,0.5);
+      transform: scaleY( 0.5,0.5);
+  }
+}
+
+
+
+.border-1pxC(@color) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.0), only screen and (min-device-pixel-ratio: 1.0) {
+      -webkit-transform: scaleY( 0.7,0.7);
+      transform: scaleY( 0.7,0.7);
+  }
+}
+
+
+.border-1pxC(@color) {
+  @media only screen and (-webkit-min-device-pixel-ratio:2.0), only screen and (min-device-pixel-ratio: 2.0) {
+      -webkit-transform: scaleY( 0.5,0.5);
+      transform: scaleY( 0.5,0.5);
+  }
+}
+
+
+.border-1pxT(@color) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.0), only screen and (min-device-pixel-ratio: 1.0) {
+    &::before {
+      -webkit-transform: scaleY( 0.7);
+      transform: scaleY( 0.7);
+    }
+  }
+}
+
+.border-1pxT(@color) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min-device-pixel-ratio: 2.0) {
+    &::before {
+      -webkit-transform: scaleY( 0.5);
+      transform: scaleY( 0.5);
+    }
+  }
+}
+
+
+
+.border-1pxB(@c) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.0), only screen and (min-device-pixel-ratio: 1.0) {
+    &::after {
+      -webkit-transform: scaleY( 0.7);
+      transform: scaleY( 0.7);
+    }
+  }
+}
+
+.border-1pxB(@c) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min-device-pixel-ratio: 2.0) {
+    &::after {
+      -webkit-transform: scaleY(  0.5);
+      transform: scaleY(  0.5);
+    }
+  }
+}
+
+
+//文本省略号 --- 显示一行
+
+.textIndex1(@w) {
+    width: @w;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//文本省略号 --- 显示两行
+.textIndex2(@w ,
+@clamp: 2) {
+    width: @w;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: box;
+    display: -webkit-box;
+    -webkit-line-clamp: @clamp;
+    -webkit-box-orient: vertical;
+    line-height:initial;
+}
+
+
+//图片缩放问题
+
+.imgScaL(@w,@h){
+  width:@w;
+  height: @h;
+  @media only screen and (min-device-width:320px ) {
+      -webkit-transform: scale(0.85,0.85);
+      transform:scale(0.85,0.85);
+      margin-left: -6px;
+  }
+  @media (min-device-width:375px ) and (max-device-width:1200px ) {
+      -webkit-transform: scale(1.0,1.0);
+      transform:scale(1.0,1.0);
+      margin-left: 0px;
+  }
+}
+//清除浮动
+.clearfix(){
+  *zoom: 1;
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+    line-height: 0;
+    visibility: hidden;
+  }
+}

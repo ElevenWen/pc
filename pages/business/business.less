@@ -1,0 +1,1387 @@
+.businessQuery{
+    width: 1200px;
+    margin: 30px auto;
+}
+// 查询头部
+.businessQuery .businessQuerys{
+	width: 910px;
+	float: left;
+	-moz-box-shadow: 0px 4px 2px 0px #eaeaea; /* 老的 Firefox */
+    box-shadow: 0px 4px 2px 0px #eaeaea;
+    background-color: #FFF;
+}
+.businessQuerys .huntingZones{
+	border-bottom: 1px dashed #E6DFFE;
+}
+.businessQuerys .huntingZones span{
+    color: black;
+	margin-right: 20px !important;
+	cursor: pointer;
+}
+.businessQuerys .huntingZones span:nth-child(1){
+	color: #8C8C8C;
+}
+.businessQuerys .huntingZones span:nth-child(2){
+   
+}
+
+.huntingZones span.activeName{
+     color:#FF3E08;
+}
+.businessQuerys .huntingZones , 
+.businessQuerys .timer{
+	width: 95%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+.businessQuerys .timer span{
+	color: #FF3E08;
+}
+.adWrap{
+    width: 270px;
+    float: right;
+    img{
+        margin-bottom: 20px;
+        width: 100%;
+        height: 160px;
+        cursor: pointer;
+    }
+}
+//清除浮动
+.clear{ clear:both} 
+
+//结果列表
+.businessList{
+    padding-top: 20px;
+    width: 910px;
+    background: #f0f0f5;
+    .businessList_top{
+        background: #FFF;
+        width: 100%;
+        height: 40px;
+        padding: 0 18px;
+        border-bottom: 1px solid #E6E6E6;
+        line-height: 40px;
+        li:nth-child(1){
+            width: 530px;
+            text-align: left;
+            color: #4D4D4D;
+        }
+        li{
+            width: 170px;
+            display: block;
+            float: left;
+            text-align: center;
+        }
+    }
+    .businessList_content{
+        li{
+            div:nth-child(1){
+                .companyName{
+                    cursor: pointer;
+                    display: block;
+                    color: #000 !important;
+                    font-size: 16px !important;
+                    float: none !important;
+                }
+                span:nth-child(3){
+                    display: inline-block;
+                    float: left;
+                }
+                span:nth-child(4){
+                    // float: left;
+                    display: block;
+                }
+                span:nth-child(5){
+                    // margin-left: 15px;
+                }
+                span:nth-child(6){
+                    float: left;
+                    color: #8c8c8c !important;
+                    label{
+                        color: #000;
+                    }
+                }
+                img{
+                    float: left;
+                    display: inline-block;
+                    width: 80px;
+                    height: 80px;
+                    margin: 10px 15px 0 0;
+                    display: none;
+                }
+            }
+        }
+    }
+    .businessList_content,.risk_content{
+        background: #FFF;
+        li{
+            height: 118px;
+            margin: 0 18px;
+            border-bottom: 1px dashed #8C8C8C;
+            div:nth-child(1){
+                width: 530px;
+                text-align: left;
+                color: #4D4D4D;
+                padding-top: 13px;
+                label{
+                    cursor: auto;
+                }
+                span{
+                    display: block;
+                    line-height: 30px;
+                }
+                span:nth-child(1){
+                    color: #4D4D4D;
+                    font-size: 16px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                }
+                span:nth-child(2){
+                    float: left;
+                }
+                span:nth-child(2) , span:nth-child(3){
+                    color: #8C8C8C;
+                    font-size: 14px;
+                    margin-right: 15px;
+                    label{
+                        color: #4D4D4D;
+                    }
+                }
+                span:nth-child(4){
+                    color: #8C8C8C;
+                    font-size: 14px;
+                    label{
+                        color: #68A8E4;
+                    }
+                }
+            }
+            div:nth-child(2){
+                line-height: 118px;
+                span{
+                    color: #FF3E08;
+                    border-radius: 2px;
+                    border: 1px solid #FF3E08;
+                    padding: 3px 8px;
+                }
+            }
+            div:nth-child(3){
+                line-height: 118px;
+                span{
+                    color: #fff;
+                    border-radius: 2px;
+ 
+                    border: 1px solid #68A8E4;
+                    background-color:#68A8E4;
+                    padding: 4px 12px;
+                    cursor: pointer;
+                }
+            }
+            div{
+                width: 170px;
+                display: block;
+                float: left;
+                text-align: center;
+            }
+        }
+        li:nth-last-child(1){
+            border:none;
+        }
+    }
+    // 知识产权商标列表
+    .knowledge_content{
+        background: #FFF;
+        li{
+            height: 140px;
+            margin: 0 18px;
+            border-bottom: 1px dashed #8C8C8C;
+            img{
+                float: left;
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                margin: 10px 15px 0 0;
+            }
+            div:nth-child(1){
+                width: 530px;
+                text-align: left;
+                color: #4D4D4D;
+                padding-top: 13px;
+                label{
+                    cursor: auto;
+                }
+                i{
+                    float: left;
+                    margin: 2px 0 0 12px;
+                    height: 25px;
+                    padding: 0 10px;
+                    background-color: #68A8E4;
+                    color:white;
+                    border-radius: 10px;
+                    text-align: center;
+                    line-height: 25px;
+                    font-size: 12px;
+                }
+                span{
+                    display: block;
+                    line-height: 30px;
+                }
+                .aaa,.register{
+                    margin-right: 20px;
+                    color: #8C8C8C;
+                    label{
+                        color: black !important;
+                    }
+                }
+                .aaa{
+                    float: left;
+                }
+                .knowname{
+                    overflow: hidden;
+                    color: #4D4D4D;
+                    font-size: 16px;
+                    em{
+                        float:left;
+                        max-width: 340px;
+                        font-style: normal;
+                        .textIndex1("auto");
+                    }
+                }
+                span:nth-last-child(2){
+                    color: #8C8C8C;
+                    font-size: 14px;
+                    margin-left: 95px;
+                    label{
+                        color: #000;
+                    }
+                }
+                span:nth-last-child(1){
+                    color: #8C8C8C;
+                    margin-left: 95px;
+                    label{
+                        color: #68A8E4;
+                    }
+                }
+            }
+            div:nth-child(2){
+                line-height: 118px;
+                span{
+                    color: #68a8e4;
+                    border-radius: 2px;
+                    border: 1px solid #68a8e4;
+                    padding: 3px 8px;
+                }
+            }
+            div:nth-child(3){
+                line-height: 118px;
+                span{
+                    color: #fff;
+                    border-radius: 2px;
+                    background: #68A8E4;
+                    border: 1px solid #68A8E4;
+                    padding: 4px 12px;
+                    cursor: pointer;
+                }
+            }
+            div{
+                width: 170px;
+                display: block;
+                float: left;
+                text-align: center;
+            }
+        }
+        li:nth-last-child(1){
+            border:none;
+        }
+    }
+    // 专利
+    .knowledge_patent{
+        background: #FFF;
+        li{
+            height: 140px;
+            margin: 0 18px;
+            border-bottom: 1px dashed #8C8C8C;
+            div:nth-child(1){
+                width: 530px;
+                text-align: left;
+                color: #4D4D4D;
+                padding-top: 13px;
+                span{
+                    display: block;
+                    line-height: 30px;
+                }
+                span:nth-child(1){
+                    color: #4D4D4D;
+                    font-size: 16px;
+                }
+                span:nth-child(2){
+                    float: left;
+                }
+                span:nth-child(2) , span:nth-child(3){
+                    color: #8C8C8C;
+                    font-size: 14px;
+                    margin-right: 15px;
+                    label{
+                        color: #4D4D4D;
+                    }
+                }
+                span:nth-child(4){
+                    color: #8C8C8C;
+                    font-size: 14px;
+                    label{
+                        color: #000;
+                    }
+                }
+                span:nth-last-child(1){
+                    color: #8C8C8C;
+                    label{
+                        color: #68a8e4;
+                    }
+                }
+            }
+            div:nth-child(2){
+                line-height: 118px;
+                span{
+                    color: #68a8e4;
+                    border-radius: 2px;
+                    border: 1px solid #68a8e4;
+                    padding: 3px 8px;
+                }
+            }
+            div:nth-child(3){
+                line-height: 118px;
+                span{
+                    color: #fff;
+                    border-radius: 2px;
+                    border: 1px solid #68A8E4;
+                    background-color: #68A8E4;
+                    padding: 4px 12px;
+                    cursor: pointer;
+                }
+            }
+            div{
+                width: 170px;
+                display: block;
+                float: left;
+                text-align: center;
+            }
+        }
+        li:nth-last-child(1){
+            border:none;
+        }
+    }
+    // 著作权
+    .knowledge_copyright{
+        background: #FFF;
+        li{
+            height: 140px;
+            margin: 0 18px;
+            border-bottom: 1px dashed #8C8C8C;
+            div:nth-child(1){
+                width: 530px;
+                text-align: left;
+                color: #4D4D4D;
+                padding-top: 13px;
+                span{
+                    display: block;
+                    line-height: 30px;
+                }
+                span:nth-child(1){
+                    color: #4D4D4D;
+                    font-size: 16px;
+                }
+                span:nth-child(2){
+                    float: left;
+                }
+                span:nth-child(2) , span:nth-child(3){
+                    color: #8C8C8C;
+                    font-size: 14px;
+                    margin-right: 20px;
+                    label{
+                        color: #4D4D4D;
+                    }
+                }
+                span:nth-child(4){
+                    // float: left;
+                    color: #8C8C8C;
+                    font-size: 14px;
+                    label{
+                        color: #000;
+                    }
+                }
+                span:nth-last-child(1){
+                    color: #8C8C8C;
+                    label{
+                        color: #68a8e4;
+                    }
+                }
+            }
+            div:nth-child(2){
+                line-height: 118px;
+                span{
+                    color: #68a8e4;
+                    border-radius: 2px;
+                    border: 1px solid #68a8e4;
+                    padding: 3px 8px;
+                }
+            }
+            div:nth-child(3){
+                line-height: 118px;
+                span{
+                    color: #fff;
+                    border-radius: 2px;
+                    border: 1px solid #68A8E4;
+                    background-color: #68A8E4;
+                    padding: 4px 12px;
+                    cursor: pointer;
+                }
+            }
+            div{
+                width: 170px;
+                display: block;
+                float: left;
+                text-align: center;
+            }
+        }
+        li:nth-last-child(1){
+            border:none;
+        }
+    }
+}
+
+.company,.detail{
+    width: 80% !important;
+}
+.businessList_content label{
+    cursor: auto !important;
+}
+.name{
+    color: #FF3E08 !important;
+}
+.year{
+    color: black !important;
+}
+
+// 法院公告
+.announcement{
+    border:1px solid #10C473 !important;
+    color: #10C473 !important;
+}
+.address,.addressFY{
+    color: #000 !important;
+}
+.addressFY{
+    display: inline-block;
+}
+
+
+//公司详情
+#companyDetail{
+    background-color: #F0F0F5;
+}
+#companyDetail .company-content{
+    width: 1200px;
+    margin: 30px auto;
+}
+//公司头部
+.company-content .company-head{
+    height: 169px;
+    background: #fff;
+    padding: 30px 20px 0 20px;
+}
+.company-head-top{
+    height: 95px;
+    border-bottom: 1px dashed #eee;
+    overflow: hidden;
+    .img{
+        width: 80px;
+        float: left;
+        margin-right: 5px;
+        img{
+            width: 100%;
+            height: 80px;
+        }
+    }
+}
+
+.company-head-top .company-name{
+    float: left;
+    padding-left: 15px;
+    width: 850px;
+    h3{
+        font-size: 16px;
+        color: #4c4c4c;
+        font-weight: bold;
+    }
+}
+.company-name .company-mes{
+    height: 49px;
+    line-height: 49px;
+}
+.company-name .company-mes span,.company-address span{
+    font-size: 14px;
+    color: #666;
+}
+.company-address a{
+    cursor: pointer;
+    font-size: 14px;
+    color: #409EFF;
+}
+.reload{
+    cursor: pointer;
+}
+.company-name .company-mes span:nth-of-type(3){
+    margin-left: 40px;
+}
+.company-address span:nth-of-type(2){
+    margin-left: 40px;
+}
+.company-head-top .company-update{
+    float: left;
+    height: 95px;
+    width: 230px;
+    .company-pad{
+        height: 26px;
+        margin-top:38px ;
+        line-height: 26px;
+    }
+}
+.company-update span{
+    font-size: 14px;
+    color: #666;
+    float: left;
+}
+.company-update .base{
+    padding-top: 3px;
+    float: left;
+    width: 20px;
+    margin-right: 10px;
+}
+.company-update .base span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../../assets/images/businessQuery/update.png);
+}
+.company-update span:nth-of-type(1){
+    color: #359af8;
+    margin-right: 15px;
+}
+.company-head-bot{
+    height: 44px;
+    line-height: 44px;
+}
+.company-head-bot span:nth-of-type(1){
+    font-size: 14px;
+    color: #666;
+    float: left;
+}
+.company-head-bot div:nth-of-type(1),.company-head-bot div:nth-of-type(2),.company-head-bot div:nth-of-type(3){
+    padding-top: 11px;
+    float: left;
+    width: 20px;
+    margin-right: 10px;
+}
+.company-head-bot div:nth-of-type(1) a{
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../../assets/images/businessQuery/QQ.png);
+}
+.company-head-bot div:nth-of-type(2) a{
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../../assets/images/businessQuery/wx.png);
+}
+.company-head-bot div:nth-of-type(3) a{
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../../assets/images/businessQuery/weibo.png);
+}
+.company-head-bot>div:nth-of-type(2){
+    position: relative;
+}
+#qr-code{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    top:31px;
+    z-index: 10;
+}
+//content部分
+.content-wrap{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.content-body{
+    float: left;
+    width: 910px;
+    background: #fff;
+}
+.content-body .content-wrap-list{
+    height: 65px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px dashed #eee;
+}
+.content-body .content-wrap-list li{
+    float: left;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #4c4c4c;
+    padding: 0 15px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    background: #F9F9FC;
+    border: 1px solid #E6E6E6;
+    margin-top: 10px;
+    a:link{
+        color: #4c4c4c;
+    }　　//设置未访问时的超链接样式
+　　      a:visited{
+        color: #4c4c4c;
+    }　　//设置已访问的链接的样式
+　　      a:hover{
+        color: #4c4c4c;
+    }　　//设置鼠标移动到链接上的样式　
+　　      a:active{
+        color: #4c4c4c;
+    } //设置链接被激活（鼠标点击与释放之间）时的样式
+}
+//工商信息
+.industry,.shareholder,.mainKey,.branch,.history,.modify,.inf,.subjected,.adjudicative,.courtAnnouncement,.sessionAnnouncement{
+    padding-left: 20px;
+}
+.industry .title,.shareholder .title,.mainKey .title,.branch .title,.history .title,.modify .title,.inf .title,.adjudicative .title,.courtAnnouncement .title,.sessionAnnouncement .title{
+    height: 80px;
+    overflow: hidden;
+    padding-top: 40px;
+}
+.industry .title,.subjected .title{
+    height: 50px;
+    padding-top: 16px;
+}
+.industry .title h4,.shareholder .title h4,.mainKey .title h4,.branch .title h4,.history .title h4,.modify .title h4,.inf .title h4,.subjected .title h4,.adjudicative h4,.courtAnnouncement h4,.sessionAnnouncement h4{
+    font-size: 16px;
+    line-height: 20px;
+    float: left;
+    padding-left: 10px;
+    height: 20px;
+    border-left: 3px solid red;
+}
+.industry-table tr td{
+    border-left:1px solid #E2E2E2;
+    border-top:1px solid #E2E2E2;
+}
+.industry-table tr td.last{
+    line-height: 20px;
+}
+.industry-table tr td:nth-of-type(1),.industry-table tr td:nth-of-type(3){
+    width: 160px;
+    height: 50px;
+    background: #F9F9FC;
+    text-align: right;
+    padding-right: 20px;
+}
+.industry-table tr td:nth-of-type(2),.industry-table tr td:nth-of-type(4){
+    width: 275px;
+    padding: 20px;
+}
+.industry-table tr td:last-of-type,.shareholder-table tr td:last-of-type,.history-table tr td:last-of-type{
+    border-right:1px solid #E2E2E2;
+}
+.industry-table tr:last-of-type td,.shareholder-table tr:last-of-type td,.history-table tr:last-of-type td{
+    border-bottom:1px solid #E2E2E2;
+}
+//股东信息
+.shareholder .icon,.mainKey .icon,.branch .icon,.history .icon,.modify .icon,.subjected .icon,.adjudicative .icon,.courtAnnouncement .icon,.sessionAnnouncement .icon{
+    display: inline-block;
+    min-width: 20px;
+    height: 16px;
+    border-radius: 50%;
+    background: #c5c5e0;
+    line-height: 2px;
+    text-align: center;
+    margin-left: 10px;
+    color: #fff;
+    padding: 10px 6px;
+}
+.shareholder-table tr td,.history-table tr td,.modify-table tr td{
+    border-left:1px solid #E2E2E2;
+    border-top:1px solid #E2E2E2;
+}
+.shareholder-table tr:nth-of-type(1){
+    background: #F9F9FC;
+}
+.shareholder-table tr td:nth-of-type(1){
+    width: 300px;
+    height: 50px;
+    padding-left: 20px;
+}
+.shareholder-table tr td:nth-of-type(2),.shareholder-table tr td:nth-of-type(3),.shareholder-table tr td:nth-of-type(4){
+    text-align: center;
+}
+.shareholder-table tr td.active{
+    width: 190px;
+    height: 50px;
+}
+.shareholder-table tr td.first{
+    color: #5FAEF9;
+    cursor: pointer;
+}
+//主要人员
+.mainKey-table{
+    width: 870px;
+    overflow: hidden;
+}
+.mainKey-table dt{
+    overflow: hidden;
+    float: left;
+}
+.mainKey-table dt:nth-child(even) dd,.mainKey-table dt:nth-child(odd) dd{
+    border-right:1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+}
+.mainKey-table dt:nth-child(1) dd,.mainKey-table dt:nth-child(2) dd{
+    border-top:1px solid #E2E2E2;
+}
+.mainKey-table dt:nth-child(odd) dd:nth-of-type(1){
+    border-left: 1px solid #E2E2E2;
+}
+.mainKey-table dt dd:nth-of-type(1){
+    background: #F9F9FC;
+    width: 160px;
+    height: 50px;
+    padding-right: 20px;
+    line-height: 50px;
+    text-align: right;
+    float: left;
+}
+.mainKey-table dt dd:nth-of-type(2){
+    background: #fff;
+    width: 274px;
+    height: 50px;
+    padding:0 20px;
+    line-height: 50px;
+    float: left;
+}
+.modify-table tr td:last-of-type{
+    border-right:1px solid #E2E2E2;
+}
+.modify-table tr:last-of-type td{
+    border-bottom:1px solid #E2E2E2;
+}
+.mainKey-table dt dd span{
+    font-size: 14px;
+    color: #5FAEF9;
+    line-height: 50px;
+    cursor: pointer;
+}
+.mainKey-table .mainKey-table-active{
+    width: 120px;
+    height: 25px;
+    float: right;
+    font-size: 14px;
+    background: #F9F9FC;
+    border: 1px solid #EDEDED;
+    line-height: 25px;
+    border-radius: 50px;
+    margin-top: 14px;
+    text-align: center;
+}
+//分支机构
+.branch-table{
+    overflow: hidden;
+    dt{
+        overflow: hidden;
+        float: left;
+    }
+}
+.branch-table dt:nth-child(even) dd,.branch-table dt:nth-child(odd) dd{
+    border-right:1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+}
+.branch-table dt:nth-child(1) dd,.branch-table dt:nth-child(2) dd{
+    border-top:1px solid #E2E2E2;
+}
+.branch-table dt:nth-child(odd) dd:nth-of-type(1){
+    border-left: 1px solid #E2E2E2;
+}
+.branch-table dt dd:nth-of-type(1),{
+    background: #F9F9FC;
+    width: 51px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #5FAEF9;
+    float: left;
+}
+.branch-table dt dd:nth-of-type(2){
+    background: #fff;
+    width: 385px;
+    height: 50px;
+    line-height: 50px;
+    padding:0 20px;
+    color: #5FAEF9;
+    float: left;
+}
+//历史信息
+.history-table tr td.first{
+    background: #F9F9FC;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom:1px solid #E2E2E2;
+}
+.history-table tr td.selected{
+    background: #fff;
+    width: 622px;
+    height: 50px;
+    padding:0 20px;
+    span{
+        color: #5FAEF9;
+        line-height: 50px;
+    }
+}
+.history-table .history-table-active{
+    width: 120px;
+    height: 25px;
+    float: right;
+    font-size: 14px;
+    background: #F9F9FC;
+    border: 1px solid #EDEDED;
+    line-height: 25px;
+    border-radius: 50px;
+    margin-top: 14px;
+    text-align: center;
+}
+//变更记录
+.modify-table{
+    margin-bottom: 20px;
+}
+.modify-table tr td:nth-of-type(1){
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.modify-table tr td:nth-of-type(2){
+    background: #fff;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+.modify-table tr td:nth-of-type(3),.modify-table tr td:nth-of-type(4){
+    background: #fff;
+    width: 310px;
+    height: 50px;
+    padding: 20px 12px;
+    line-height: 20px;
+}
+.modify-table tr:nth-of-type(1){
+    background: #F9F9FC;
+}
+.modify-table tr:nth-of-type(2){
+    text-align: center;
+}
+//公司简介
+.inf{
+    padding-right: 20px;
+}
+.inf-content{
+    width: 100%;
+    border: 1px solid #E2E2E2;
+    margin-right: 20px;
+}
+//被执行人
+.subjected-table tr:nth-of-type(1){
+    background: #F9F9FC;
+    text-align: center;
+    td{
+        color: #7F7F80;
+    }
+}
+.subjected-table tr td:nth-of-type(1){
+    width: 55px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+}
+.subjected-table tr td:nth-of-type(2){
+    width: 245px;
+    height: 50px;
+    padding: 0 12px;
+}
+.subjected-table tr td:nth-of-type(3){
+    width: 180px;
+    height: 50px;
+    padding: 0 12px;
+}
+.subjected-table tr td:nth-of-type(4){
+    width: 250px;
+    height: 50px;
+    padding: 0 12px;
+}
+.subjected-table tr td:nth-of-type(5){
+    width: 140px;
+    height: 50px;
+    padding: 0 12px;
+}
+.subjected-table tr td,.adjudicative-table tr td{
+    border-left:1px solid #E2E2E2;
+    border-top:1px solid #E2E2E2;
+}
+.subjected-table tr td:last-of-type,.adjudicative-table tr td:last-of-type{
+    border-right:1px solid #E2E2E2;
+}
+.subjected-table tr:last-of-type td,.adjudicative-table tr:last-of-type td{
+    border-bottom:1px solid #E2E2E2;
+}
+//裁判文书
+.adjudicative-table tr:nth-of-type(1){
+    background: #F9F9FC;
+    text-align: center;
+    height: 50px;
+}
+.adjudicative-table tr td:nth-of-type(1){
+    width: 55px;
+    text-align: center;
+}
+.adjudicative-table tr td:nth-of-type(2){
+    width: 235px;
+    padding: 20px 12px;
+    color: #359AF8;
+    line-height: 20px;
+}
+.adjudicative-table tr td:nth-of-type(3),.adjudicative-table tr td:nth-of-type(4),.adjudicative-table tr td:nth-of-type(6){
+    width: 120px;
+    padding: 0 12px;
+    line-height: 20px;
+}
+.adjudicative-table tr td:nth-of-type(5){
+    width: 220px;
+    padding: 20px 12px;
+    line-height: 20px;
+    div{
+        margin-bottom: 5px;
+    }
+}
+.adjudicative-table tr td:nth-of-type(5) div span{
+    color: #359AF8;
+}
+.adjudicative-table tr:nth-of-type(1) td{
+    padding: 0;
+    color: #7F7F80;
+}
+//法院公告
+.courtAnnouncement-table tr:nth-of-type(1){
+    background: #F9F9FC;
+    text-align: center;
+    height: 50px;
+}
+.courtAnnouncement-table tr td:nth-of-type(1){
+    width: 55px;
+    text-align: center;
+}
+.courtAnnouncement-table tr td:nth-of-type(2){
+    width: 175px;
+    padding: 0 12px;
+}
+.courtAnnouncement-table tr td:nth-of-type(3){
+    width: 160px;
+    padding: 20px 12px;
+    line-height: 20px;
+}
+.courtAnnouncement-table tr td:nth-of-type(4){
+    width: 180px;
+    padding: 20px 12px;
+    line-height: 20px;
+}
+.courtAnnouncement-table tr td:nth-of-type(5){
+    width: 300px;
+    padding: 20px 12px;
+    line-height: 20px;
+    p{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 8;
+        overflow: hidden;
+    }
+}
+.courtAnnouncement-table tr td,.courtAnnouncement-table tr td{
+    border-left:1px solid #E2E2E2;
+    border-top:1px solid #E2E2E2;
+}
+.courtAnnouncement-table tr td:last-of-type,.courtAnnouncement-table tr td:last-of-type{
+    border-right:1px solid #E2E2E2;
+}
+.courtAnnouncement-table tr:last-of-type td,.courtAnnouncement-table tr:last-of-type td{
+    border-bottom:1px solid #E2E2E2;
+}
+//开庭公告
+.sessionAnnouncement-table tr:nth-of-type(1){
+    background: #F9F9FC;
+    text-align: center;
+    height: 50px;
+}
+.sessionAnnouncement-table tr td:nth-of-type(1){
+    width: 55px;
+    text-align: center;
+}
+.sessionAnnouncement-table tr td:nth-of-type(2),.sessionAnnouncement-table tr td:nth-of-type(3){
+    width: 120px;
+    padding: 20px 12px;
+    line-height: 20px;
+}
+.sessionAnnouncement-table tr td:nth-of-type(4){
+    width: 220px;
+    padding: 20px 12px;
+    line-height: 20px;
+}
+.sessionAnnouncement-table tr td:nth-of-type(5){
+    width: 245px;
+    padding: 20px 12px;
+    line-height: 20px;
+    span{
+        margin-right: 8px;
+    }
+}
+.sessionAnnouncement-table tr td:nth-of-type(6){
+    width: 110px;
+    text-align: center;
+    color: #359AF8;
+    
+}
+.sessionAnnouncement-table tr td:nth-of-type(6).active{
+    cursor: pointer;
+}
+.sessionAnnouncement-table tr td{
+    border-left:1px solid #E2E2E2;
+    border-top:1px solid #E2E2E2;
+}
+.sessionAnnouncement-table tr td:last-of-type{
+    border-right:1px solid #E2E2E2;
+}
+.sessionAnnouncement-table tr:last-of-type td{
+    border-bottom:1px solid #E2E2E2;
+}
+.information>div:last-child{
+    margin-bottom: 88px;
+}
+.law>div:last-child{
+    margin-bottom: 88px;
+}
+//模态框
+.message{
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0,0,0,0.42);
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0!important;
+    .messageWrap{
+        width: 900px;
+        height: 442px;
+        margin: 16% auto;
+        background: #fff;
+        .messageWrap_top{
+            width: 100%;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+            margin-bottom: 30px;
+            div{
+                width: 900px;
+                text-align: center;
+                font-size: 18px;
+                color: #4d4d4d;
+            }
+            span{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 48px;
+                width: 48px;
+                display: block;
+                cursor: pointer;
+                background-position: 13px 10px;
+                background-repeat: no-repeat;
+                background-image: url(../../assets/images/home/close.png);
+            }
+        }
+    }
+}
+.message .sessionAnnouncement-table{
+    margin: 0 auto;
+}
+.message .sessionAnnouncement-table tr td:nth-of-type(1),.message .sessionAnnouncement-table tr td:nth-of-type(3){
+    background: #F9F9FC;
+    width: 160px;
+    height: 50px;
+    text-align: right;
+    padding-right: 20px;
+}
+.message .sessionAnnouncement-table tr td:nth-of-type(2),.message .sessionAnnouncement-table tr td:nth-of-type(4){
+    width: 270px;
+    padding: 0 20px;
+    text-align: left;
+    span{
+        margin-right: 8px;
+    }
+}
+.message .sessionAnnouncement-table tr td{
+    border-left:1px solid #E2E2E2;
+    border-top:1px solid #E2E2E2;
+}
+.message .sessionAnnouncement-table tr td:last-of-type{
+    border-right:1px solid #E2E2E2;
+}
+.message .sessionAnnouncement-table tr:last-of-type td{
+    border-bottom:1px solid #E2E2E2;
+}
+
+//对外投资
+.investment{
+    padding-left: 20px;
+    margin-bottom: 88px;
+}
+.investment .title{
+    height: 50px;
+    overflow: hidden;
+    padding-top: 15px;
+    h4{
+        font-size: 16px;
+        line-height: 20px;
+        float: left;
+        padding-left: 10px;
+        height: 20px;
+        border-left: 3px solid red;
+    }
+}
+.investment .icon{
+    display: inline-block;
+    min-width: 20px;
+    height: 16px;
+    border-radius: 50%;
+    background: #c5c5e0;
+    line-height: 2px;
+    text-align: center;
+    margin-left: 10px;
+    color: #fff;
+    padding: 10px 6px;
+}
+.investment-table tr:nth-of-type(1){
+    background: #F9F9FC;
+    text-align: center;
+    height: 50px;
+}
+.investment-table tr td:nth-of-type(1){
+    width: 230px;
+    padding:15px 12px;
+    line-height: 20px;
+}
+.investment-table tr td.active{
+    color: #5EAEF9;
+}
+.investment-table tr td:nth-of-type(2){
+    width: 220px;
+    padding: 0 12px;
+    span:nth-of-type(1){
+        color: #5EAEF9;
+        float: left;
+        line-height: 20px;
+    }
+    span:nth-of-type(2){
+        float: right;
+        width: 100px;
+        height: 20px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding-left: 10px;
+        line-height: 18px;
+        background: url(../../assets/images/businessQuery/right_arrow.png) no-repeat;
+        background-size: 8% 50%;
+        background-position: 93% 50%;
+        background-color: #F9F9FC;
+        
+    }
+}
+.investment-table tr td:nth-of-type(3){
+    width: 150px;
+    padding: 0 12px;
+    line-height: 20px;
+}
+.investment-table tr td:nth-of-type(4){
+    width: 95px;
+    text-align: center;
+}
+.investment-table tr td:nth-of-type(5){
+    width: 105px;
+    text-align: center;
+}
+.investment-table tr td:nth-of-type(6){
+    width: 70px;
+    text-align: center;
+    line-height: 20px;
+}
+.investment-table tr td{
+    border-left:1px solid #E2E2E2;
+    border-top:1px solid #E2E2E2;
+}
+.investment-table tr td:last-of-type{
+    border-right:1px solid #E2E2E2;
+}
+.investment-table tr:last-of-type td{
+    border-bottom:1px solid #E2E2E2;
+}
+//侧边栏内容
+.content-aside{
+    float: left;
+    width: 270px;
+    margin-left: 20px;
+}
+.content-aside .content-aside-top{
+    width: 100%;
+    height: 268px;
+    background: #fff;
+}
+.content-aside .content-aside-top .content-aside-list{
+    overflow: hidden;
+}
+.content-aside .content-aside-top .content-aside-list li{
+    width: 135px;
+    height: 42px;
+    float: left;
+    text-align: center;
+    line-height: 42px;
+    color: #FF846F;
+    cursor: pointer;
+    background: #ffe6df;
+}
+.content-aside .content-aside-top .content-aside-list li.active{
+    background: #fff;
+}
+.top-manager{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.top-manager .img{
+    width: 48px;
+    height: 48px;
+    margin-top: 15px;
+    float: left;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.top-manager .inf{
+    margin-top: 15px;
+    margin-left: 14px;
+    padding-top: 5px;
+    padding-left: 0;
+    float: left;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+.top-manager .inf p{
+    font-size: 12px;
+    color: #8C8C8C;
+    line-height: 30px;
+}
+.top-manager .top-manager-com{
+    font-size: 12px;
+    color: #4c4c4c;
+    margin-top: 10px;
+    float: left;
+    span{
+        width: 127px;
+        font-size: 12px;
+        display: inline-block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+.top-manager .arrow{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.top-manager .arrow span{
+    color: red;
+    cursor: pointer;
+}
+.top-manager .arrow span:nth-of-type(1){
+    margin-right: 40px;
+}
+.content-aside .content-aside-mid{
+    height: 140px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.content-aside .content-aside-bot{
+    height: 140px;
+    cursor: pointer;
+}
+.content-aside img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+// 查询为空
+.findListWrap{
+    // padding-top: 20px;
+    background: red;
+    #js-listComWrap{
+        background: #fff
+    }
+}
+#js-listComWrap .nothingCom {
+  height: 560px;
+  background: url(../../assets/images/tabBar/nothing.png) center 17.85% no-repeat;
+  color: #808088;
+}
+#js-listComWrap .nothing {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 36%;
+}
+#js-listComWrap .nothing dt {
+  margin-bottom: 40px;
+}
+#js-listComWrap  .nothing dd {
+  margin-bottom: 12px;
+}
+#companyDetail /deep/ .el-carousel__item--card.is-in-stage{
+    cursor: text;
+}
+
+body{
+    background: red
+}
+
+
+
+html{
+    background: yellow!important;
+}

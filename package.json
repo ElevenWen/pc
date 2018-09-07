@@ -1,0 +1,55 @@
+{
+  "name": "123",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "liulu <lilu@qq.com>",
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "172.18.30.16",
+      "port": "10011"
+    }
+  },
+  "scripts": {
+    "devNet": "cross-env _NODE_ENV=devNet node  --max-old-space-size=4048 server.js",
+    "buildNet": "cross-env _NODE_ENV=startNet   nuxt build",
+    "startNet": "cross-env _NODE_ENV=startNet  node  --max-old-space-size=4048 server.js",
+    "devCom": "cross-env _NODE_ENV=devCom node  --max-old-space-size=4048 server.js",
+    "buildCom": "cross-env _NODE_ENV=startCom   nuxt build",
+    "startCom": "cross-env _NODE_ENV=startCom   node  --max-old-space-size=4048 server.js",
+    "generateNet": "cross-env _NODE_ENV=generateNet nuxt generate",
+    "generateCom": "cross-env _NODE_ENV=generateCom nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cross-env": "^5.0.1",
+    "crypto-js": "^3.1.9-1",
+    "element-ui": "^2.2.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "jquery": "^3.3.1",
+    "lru-cache": "^4.1.2",
+    "nuxt": "^1.0.0",
+    "qrcodejs2": "^0.0.2",
+    "sass-resources-loader": "^1.3.3",
+    "source-map-support": "^0.4.15",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "backpack-core": "^0.4.3",
+    "css": "^2.2.1",
+    "css-loader": "^0.28.10",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.20.3",
+    "vue-style-loader": "^4.0.2"
+  }
+}

@@ -1,0 +1,857 @@
+.headerTitle{
+    width: 1200px;
+    margin: 0 auto;
+    span{
+        cursor: pointer;
+    }
+}
+.body,.perSignature,.comSignature{
+    width: 1198px;
+    // height: 661px;
+    background:#fff;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.bodyTitle{
+    height: 62px;
+    border-bottom: 1px solid #ebebeb;
+    line-height: 62px;
+    .contarctDetail{
+        padding-left: 25px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .signContract{
+        float: right;
+        margin-right: 15px;
+        cursor: pointer;
+        .iconSign{
+            width: 20px;
+            height: 20px;
+            background: url("~assets/images/personalCenter/contract/signContractB.png") no-repeat;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    }
+    .downContract{
+        float: right;
+        margin-right: 15px;
+        cursor: pointer;
+        .iconDown{
+            width: 20px;
+            height: 20px;
+            background: url("~assets/images/personalCenter/contract/downloadContractB.png") no-repeat;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    }
+    .seeContract{
+        float: right;
+        margin-right: 15px;
+        cursor: pointer;
+        .iconSee{
+            width: 20px;
+            height: 20px;
+            background: url("~assets/images/personalCenter/contract/seeContractB.png") no-repeat;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    }
+}
+.singerC{
+    width: 150px;
+    height: 40px;
+    background: #ff3e08;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.personal,.company{
+    display: inline-block;
+    width: 590px;
+    line-height: 100px;
+    text-align: center;
+    // margin: 20px auto;
+}
+.personal{
+    background: #fff;
+}
+.personalImg,.comImg{
+    width: 220px;
+    height: 220px;
+    margin: 60px 0 0 60px;
+}
+.radio{
+    margin: -65px 0 0 62px;
+    .isRedImg{
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        background: url("~assets/images/personalCenter/contract/select.png") no-repeat;
+    }
+    .isBlackImg{
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        background: url("~assets/images/personalCenter/contract/noselect.png") no-repeat;
+    }
+}
+.personWord,.comWord{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+.nextStep{
+    width: 150px;
+    height: 40px;
+    background: #ff3e08;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 45%;
+    margin-top: 8%;
+    cursor: pointer;
+}
+// 公司认证
+.comCertified,.perCertified{
+    width: 1200px;
+    background: #fff;
+    margin: 20px auto;
+    border:1px solid transparent;
+}
+.uploadWrap,.uploadIDWrap{
+    display: inline-block;
+    width: 800px;
+    vertical-align: top;
+    position: relative;
+}
+.uploadBusiness{
+    width: 320px;
+    height: 240px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 22;
+    opacity: 0;
+}
+.upL{
+    width: 320px;
+    height: 240px;
+    background: url("~assets/images/personalCenter/contract/upload.png") no-repeat;
+    background-position: center;
+    vertical-align: top;
+    img{
+        width: 320px;
+        height: 240px;
+    }
+    span{
+        font-size: 20px;
+        display: block;
+        margin: 168px 0 0 120px;
+    }
+}
+.upL,.idcardUp{
+    display: inline-block;
+    border: 2px dashed rgb(204,204,204);
+    background-color: rgba(245, 245, 245, 1);
+}
+.des{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.desWord{
+    color: #8c8c8c;
+    margin: 10px 0 0 281px;
+    line-height: 20px;
+}
+.idcardUp{
+    width: 320px;
+    height: 200px;
+    background: url("~assets/images/personalCenter/contract/upload.png") no-repeat;
+    background-position: center;
+    vertical-align: top;
+    img{
+        width: 320px;
+        height: 200px;
+    }
+    span{
+        font-size: 20px;
+        display: block;
+        margin: 136px 0 0 120px;
+    }
+}
+.uploadIdcard,.uploadIdcardP{
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 22;
+    opacity: 0;
+}
+.uploadIdcardBack,.uploadIdcardBackP{
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 22;
+    opacity: 0;
+}
+// 步骤追踪
+#step{
+    width: 1200px;
+    margin: 30px auto;
+    margin-left: 7%;
+}
+.line1,.line2,.line3,.line4{
+    width: 260px;
+    height: 5px;
+    display: inline-block;
+    background:#fc7b03;
+    margin-left: -5px;
+    position: relative;
+    top: 51px;
+}
+.line2,.line3,.line4{
+    background:#e1e1e1;
+}
+.outer{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    display: inline-block;
+    position: relative;
+    top: -21px;
+    left: 92px;
+}
+.num1,.num2,.num3,.num4{
+    display: block;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#fc7b03;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fdfdfd;
+}
+.num2,.num3,.num4{
+    background:#e1e1e1;
+}
+i{
+    font-style: normal;
+    font-size: 10px;
+}
+.num1,.num2,.num3,.num4{
+    position: relative;
+    top: -68px;
+    left: 97px;
+}
+.world{
+    position: relative;
+    top: -54px;
+    left: 90px;
+    font-size: 16px;
+}
+// 企业实名认证
+.icon{
+    width: 10px;
+    height: 26px;
+    background: #fc7b03;
+    display: inline-block;
+    margin: 20px 0 0 83px;
+}
+.certifiedWord{
+    display: inline-block;
+    font-size: 18px;
+    color: #8c8c8c;
+    margin: -5px 0 0 10px;
+    vertical-align: top;
+    margin-top: 24px;
+}
+.red{
+    color: #df3d3e;
+}
+.telWrap,.code,.businessWrap{
+    margin-top: 30px;
+}
+.telWord,.codeWord{
+    width: 230px;
+    margin-left: 4%;
+    display: inline-block;
+    text-align: right;
+}
+.telWrap input,.selCom{
+    width: 218px;
+    height: 26px;
+    border: 1px solid #cccccc;
+    padding-left: 5px;
+    font-size: 12px;
+}
+.addC{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("~assets/images/personalCenter/contract/addC.png") no-repeat;
+    position: relative;
+    top: 8px;
+    left: -25px;
+    cursor: pointer;
+}
+.comList{
+    width: 218px;
+    height: 26px;
+    margin-left: 278px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    line-height: 26px;
+    font-size: 12px;
+    border-top: none;
+    cursor: pointer;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: all 0.4s linear;
+  }
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+.del{
+    color:#fc9144;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.code input{
+    width: 128px;
+    height: 26px;
+    border: 1px solid #cccccc;
+    padding-left: 5px;
+    font-size: 12px;
+}
+.getCode{
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    color:#fff;
+    background: #ff3e08;
+    line-height: 28px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.apply{
+    width: 180px;
+    height: 45px;
+    background: #ff3d04;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin:60px 0 60px 24%;
+    letter-spacing: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+// 弹出框
+.messageBox,.errBoxWrap{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:0px;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    background-color:rgba(0, 0, 0, 0.4); 
+}
+.close{
+    width: 13px;
+    height: 12px;
+    margin: 12px 10px  0 0;
+    float: right;
+    cursor: pointer;
+}
+.tipsWrap{
+    width: 378px;
+    height: 237px;
+    background: #fff;
+    margin: 20% 0 0 35%;
+}
+.tipsTitWrap{
+    height: 39px;
+    background: #fcfcfd;
+    border: 1px solid #e8e8e9;
+    span{
+        margin-left: 20px;
+        line-height: 39px;
+        font-size: 16px;
+    }
+}
+.successImg{
+    width: 46px;
+    height: 46px;
+    background: url("~assets/images/personalCenter/contract/success.png") no-repeat;
+    margin: 40px 0 0 40px;
+}
+.content,.contentErr{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 25px;
+    float: right;
+    margin-right: 40px;
+}
+.content{
+    margin-top: 25px;
+    margin-right: 30px;
+    
+}
+.contentErr{
+    margin-top: 35px;
+}
+.errBtn{
+    padding: 20px 40px 0 105px;
+    float: left;
+}
+.errBtn .sure{
+    float: left;
+}
+.errBtn .cancel{
+    float: right;
+}
+.toOther{
+    display: block;
+    margin: 40px 0 0 99px;
+    i{
+        color: #359af8;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+}
+.errorImg{
+    width: 46px;
+    height: 46px;
+    background: url("~assets/images/personalCenter/contract/error.png") no-repeat;
+    margin: 40px 0 0 40px;
+    display: block;
+    float: left;
+}
+.errorrr{
+    display: inline-block;
+    height: 42px;
+    margin-top: 44px;
+    line-height: 20px;
+    width: 250px;
+    text-align: left;
+    padding-left: 20px;
+}
+.sure,.cancel{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sure{
+    background: #ff3e08;
+    color: #fff; 
+}
+.cancel{
+    border: 1px solid rgba(230, 230, 230, 1);
+    margin-left: 20px;
+}
+// 个人签章
+.perSingWrap{
+    overflow: hidden;
+}
+.perSinger,.comSinger{
+    width: 350px;
+    // height: 210px;
+    margin: 31px 0 0 31px;
+    display: inline-block;
+    vertical-align: top;
+}
+// .perSinger{
+//     border: 1px solid red;
+// }
+.perSing{
+    width: 348px;
+    // height: 225px;
+    background: #fff;
+    position: relative;
+    background: url("~assets/images/personalCenter/contract/Projection.png");
+    background-size: 348px 210px;
+    .personName{
+        font-size: 30px;
+        font-weight: 600;
+        position: relative;
+        top: -70px;
+        text-align: center;
+    }
+    .personName2{
+        font-weight: 400;
+    }
+    .personidCard{
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+        top: -50px;
+        text-align: center;
+    }
+    .personidCardNo{
+        font-weight: 400;
+    }
+    .img{
+        margin-top: 6px;
+        margin-left: 6px;
+    }
+}
+.status{
+    height: 34px;
+    background: #f2f2f2;
+    margin-top: -9px;
+    position: relative;
+    top: 4px;
+    width: 347px;
+    span:nth-child(1){
+        float: right;
+        line-height: 38px;
+        margin-right: 22px;
+        font-size: 16px;
+        cursor: pointer;
+        color: #71B852;
+    }
+    span:nth-child(1):hover{
+        text-decoration: underline;
+    }
+}
+.reset{
+    height: 34px;
+    background: #f2f2f2;
+    margin-top: -9px;
+    position: relative;
+    top: 4px;
+    width: 347px;
+    span:nth-child(3){
+        float: right;
+        line-height: 34px;
+        margin-right: 22px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .nodify:hover{
+        color: #df3d3e;
+    }
+}
+.redCorr{
+    width: 43px;
+    height: 40px;
+    float: right;
+    background: url("~assets/images/personalCenter/contract/isSelect.png") no-repeat;
+}
+.perNextStep{
+    width: 150px;
+    height: 40px;
+    background: #ff3e08;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin: 50px 0 85px 525px;
+    cursor: pointer;
+    display: inline-block;
+}
+.redBorder{
+    border: 1px solid red;
+    // display: inline-block;
+    // width: 360px;
+    // height: 220px;
+    // background: url("~assets/images/personalCenter/contract/redframe.png");
+}
+// 公司签章
+.comSing{
+    width: 348px;
+    height: 210px;
+    // width: 360px;
+    // height: 220px;
+    background: #fff;
+    cursor: pointer;
+    background: url("~assets/images/personalCenter/contract/Projection.png") no-repeat;
+    background-size: 348px 210px;
+    .img{
+        margin-top: 6px;
+        margin-left: 6px;
+    }
+}
+.redfame{
+    display: inline-block;
+    width: 350px;
+    height: 212px;
+    border: 1px solid red;
+    // background: url("~assets/images/personalCenter/contract/redframe.png");
+}
+.grayB{
+    width: 348px;
+    // height: 210px;
+    background: #e7e7e7;
+}
+.sign{
+    margin: -105px auto;
+    display: block;
+}
+.statusC,.resetC{
+    width: 348px;
+    height: 34px;
+    background: #f2f2f2;
+    margin-top: -34px;
+    // margin-left: 5px;
+    span:nth-last-child(1){
+        float: right;
+        line-height: 38px;
+        margin-right: 10px;
+        // font-size: 16px; 
+        cursor: pointer;
+    }
+}
+.resetC{
+    width: 339px;
+    height: 34px;
+    margin-left: 5px;
+    .nodify:hover{
+        color: #df3d3e;
+    }
+}
+.statusC{
+    color: #5fb337;
+}
+.statusC:hover{
+    text-decoration:underline;
+}
+.ringWhite{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("~assets/images/personalCenter/contract/availablesignature2.png");
+    margin: 7px 10px 10px 20px;
+    cursor: pointer;
+}
+.ringRed{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("~assets/images/personalCenter/contract/availablesignature.png");
+    margin: 7px 10px 10px 20px;
+    cursor: pointer;
+}
+.wordRing{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    color: #666666;
+    cursor: pointer;
+}
+.wordRing:hover{
+    color: #df3d3e
+}
+.deletC{
+    width: 346px;
+    height: 34px;
+    background: #f2f2f2;
+    z-index: 99999;
+    margin-left: 1px;
+    span:nth-child(1){
+        display: inline-block;
+        line-height: 34px;
+        color: #359af8;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    span:nth-child(2){
+        float: right;
+        line-height: 34px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    span:nth-child(1):hover{
+        text-decoration: underline;
+    }
+    span:nth-child(2):hover{
+        color: #df3d3e;
+    }
+    span:nth-child(4):hover{
+        color: #df3d3e;
+    }
+    .line{
+        float: right;
+        line-height: 34px;
+        margin-right: 5px;
+        margin-left: -5px;
+    }
+}
+.delet{
+    height: 35px;
+}
+.deletCompany{
+    margin-top: -35px;
+}
+.deletErr{
+    margin-left: 20px !important;
+}
+.comName,.comName2{
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    top: 36px;
+    text-align: center;
+}
+.comName2{
+    font-weight: 400;
+}
+.addSign{
+    display: inline-block;
+    width: 345px;
+    height: 200px;
+    border: 2px dashed #e2e2e2;
+    margin: 40px 0 0 34px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.addSignImg{
+    margin: 65px 0 0 145px;
+}
+.failImg{
+    position: absolute;
+    margin: -40px 0;
+}
+
+.fddui-client-logo{
+    display: none !important;
+}
+// 更换照片
+.changeImg{
+    width: 318px;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.5;
+    margin-top: -44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+    color: #fff;
+}
+.telphoneNum{
+    background: #f5f5f5;
+}
+
+.modify{
+    cursor: pointer;
+    float: right;
+    line-height: 34px;
+    margin-right: 10px;
+}
+.bodyTitlee{
+    height: 62px;
+    border-bottom: 1px solid #ebebeb;
+    line-height: 62px;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.failImgP{
+    position: absolute;
+    left: -1px;
+}
+.gray{
+    background: gray;
+}
+
+//公司图片上传示意 图片
+.updatedImg_des{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    transition: 0.5s;
+    z-index: 500;
+    .contentWrap{
+      position: relative;
+      padding-top: 200px;
+      width: 1150px;
+      height: 100%;
+      margin: 0 auto;
+      .close1{
+        position: absolute;
+        top: 150px;
+        right: 0;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .des{
+        margin-top: 100px;
+        display: flex;
+        &>div{
+          flex: 1;
+          color: white;
+        }
+        .desText{
+          ul{
+            width: 100%;
+            li{
+              width: 100%;
+              height: 210px;
+              padding-top: 100px;
+              overflow: hidden;
+              span{
+                display: block;
+                float: left;
+              }
+              .line{
+                border: 2px solid #FA4343;
+                width: 36px;
+                margin-top: 15px;
+                line-height: 20px;
+              }
+              .num{
+                border: 1px solid #FA4343;
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                margin: 5px 24px;
+                float: left;
+                text-align: center;
+                border-radius: 50%;
+                background-color: #FA4343;
+              }
+              .text{
+                width: 350px;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .noSignC{
+    display: inline-block;
+    margin-left: 10px;
+  }

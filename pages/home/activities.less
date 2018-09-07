@@ -1,0 +1,137 @@
+#activities{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(#e5b02c, #efbf3e); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#e5b02c, #efbf3e); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#e5b02c, #efbf3e); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#e5b02c, #efbf3e); /* 标准的语法 */
+}
+//顶部背景
+#activities .header{
+    width:100%;
+    height: 549px;
+    background: url(../../assets/images/home/activities/header.png) 100% 100%;
+}
+//中部内容
+#activities .content .content-middle{
+    width: 1111px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    .bgImg{
+        width: 100%;
+        height: 952px;
+        position: absolute;
+        left: 0;
+        top: 329px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .list{
+        width: 1111px;
+        height: 381px;
+        background: url(../../assets/images/home/activities/bgborder.png);
+        background-size: 100% 100%;
+        margin-bottom: 77px;
+        .img{
+            width: 317px;
+            float: left;
+            img{
+                width: 225px;
+                height: 225px;
+                margin-left: 56px;
+                margin-top: 84px;
+            }
+        }
+        
+        .characters{
+            float: left;
+            width: 794px;
+            height: 100%;
+            padding-top: 94px;
+            position: relative;
+            h3{
+                font-size: 44px;
+                color: #3c3c3c;
+                margin-bottom: 37px;
+            }
+            p{
+                line-height: 54px;
+                font-size: 34px;
+                color: #565656;
+            }
+            //免费试用3天
+            .btn{
+                width: 260px;
+                height: 121px;
+                font-size: 38px;
+                color: #ffffff;
+                background: url(../../assets/images/home/activities/button.png);
+                background-size: 100% 100%;
+                position: absolute;
+                right: 48px;
+                bottom: 105px;
+                text-align: center;
+                line-height: 121px;
+                cursor: pointer;
+            }
+        }
+    }
+    //备注
+    .remark{
+        margin-bottom: 246px;
+        padding-left: 39px;
+    }
+    .remark p{
+        font-size: 38px;
+        color: #69541d;
+        line-height: 56px;
+    }
+    .remark p:nth-of-type(2){
+        text-indent: 114px;
+    }
+}
+
+#activities /deep/ .collectionDialogWrap {
+  .el-dialog__header {
+    padding: 10px 0 10px 20px;
+    background-color: #fcfcfd;
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.08);
+    font-family: MicrosoftYaHei;
+    font-size: 18px;
+    color: #4d4d4d;
+  }
+  .el-dialog__body {
+    text-align: center;
+    > div {
+      margin-bottom: 50px;
+      overflow: hidden;
+    }
+    img {
+        margin-right: 10px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 17px;
+    }
+    .text {
+      float: left;
+      text-align: left;
+      width: 211px;
+      .p1 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .p2 {
+        margin-top: 18px;
+        span,button{
+          margin-right: 10px;
+          cursor: pointer;
+          color: #359af8;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

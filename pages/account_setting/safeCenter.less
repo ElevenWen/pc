@@ -1,0 +1,856 @@
+//安全中心
+.right_frame{
+    background: #fff;
+    border: 1px solid #ebebeb;
+    h3{
+        height: 46px;
+        line-height: 46px;
+        font-size: 15px;
+        padding-left: 19px;
+        border-bottom: 1px solid #eee;
+    }
+    .content{
+        .top{
+            height: 112px;
+            padding: 30px 0 0 29px;
+            border-bottom: 1px solid #eee;
+            .level{
+                span:nth-child(1){
+                    font-size: 15px;
+                }
+                span:nth-child(2){
+                    color: #f44e41;
+                }
+            }
+            p{
+                margin-top: 26px;
+                font-size: 12px;
+                span{
+                    color: #f44e41;
+                }
+            }
+        }
+        .bottom{
+            padding: 0 40px 120px 40px;
+            ul{
+                li{
+                    height: 80px;
+                    line-height: 80px;
+                    border-bottom: 1px dashed #eee;
+                    position: relative;
+                    .psdImg,.emailImg,.mobileImg{
+                        vertical-align: middle;
+                        display: inline-block;
+                        width: 36px;
+                        height: 36px;
+                        background-image: url("../../assets/images/account-setting/eamil.png");
+                        background-size: 36px 36px;
+                    }
+                    .psdImg2,.emailImg2,.mobileImg2{
+                        vertical-align: middle;
+                        display: inline-block;
+                        width: 36px;
+                        height: 36px;
+                        background-image:url("../../assets/images/account-setting/ihone_icon.png");
+                        background-size: 36px 36px;
+                    }
+                    .des{
+                        color: #8c8c8c;
+                        font-size: 12px;
+                    }
+                    .btn{
+                        position: absolute;
+                        right: 80px;
+                            button{
+                                width: 76px;
+                                height: 32px;
+                                background-color: #ff3e08;
+                                // margin-left: 704px;
+                                color: #fff;
+                                line-height: 0;
+                                font-size: 16px;
+                            }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .changePsd ,
+    .emailAuthen,
+    .changeMobile{
+        display: none;
+        height: 450px;
+    }
+    //修改手机号
+    .changeMobile{
+        padding: 20px 30px;
+        .changeMobile_T{
+            span:nth-child(1){
+                color: #4d4d4d;
+                font-size: 16px;
+                padding-right: 15px;
+            }
+            span:nth-child(2){
+                color: #8c8c8c;
+                font-size: 12px;
+            }
+        }
+        .secondTel{
+            width: 550px !important;
+            .secondGetCode{
+                margin-right: 210px !important;
+            }
+        }
+        .changeMobile_C{
+            width: 475px;
+            height: 168px;
+            margin: 30px 0 0 40px;
+            .newTel{
+                width: 150px;
+            }
+            span:nth-child(1),
+            span:nth-child(3){
+                width: 76px;
+                line-height: 40px;
+            }
+            span:nth-child(2){
+                float: none;
+            }
+            .firstGetCode,.secondGetCode{
+                border: 1px solid #ccc;
+                width: 100px;
+                float: right;
+                cursor: pointer;
+                background: #e6e6e6;
+                margin-right: 138px;
+                line-height: 40px;
+                text-align: center;
+            }
+            span{
+                display: block;
+                float: left;
+                color: #4d4d4d;
+                margin-bottom: 20px;
+                height: 40px;
+                input{
+                    width:260px;
+                    height: 40px;
+                    padding-left: 5px;
+                    border: 1px solid #ccc;
+                }
+                .yzCode{
+                    width: 150px;
+                }
+                .pasInput{
+                    width: 280px;
+                }
+                label{
+                    font-size: 12px;
+                    padding-left: 15px;
+                    color: #ff3e08;
+                    img{
+                        vertical-align: sub;
+                    }
+                }
+            }
+            button{
+                width: 130px;
+                height: 38px;
+                border-radius: 4px;
+                margin: 10px 20px 0 75px;
+                color: #FFF;
+                background: #ff3e08;
+            }
+        }
+    }
+
+    // 修改密码
+    .changePsd{
+        padding: 20px 30px;
+        .changePsd_T{
+            span:nth-child(1){
+                color: #4d4d4d;
+                font-size: 16px;
+                padding-right: 15px;
+            }
+            span:nth-child(2){
+                color: #8c8c8c;
+                font-size: 12px;
+            }
+        }
+        .changePsd_C{
+            width: 475px;
+            height: 168px;
+            margin: 30px 0 0 40px;
+            .newTel{
+                width: 150px;
+            }
+            span:nth-child(1),
+            span:nth-child(3){
+                width: 76px;
+                line-height: 40px;
+            }
+            span:nth-child(2){
+                float: none;
+            }
+            .newPsd{
+                line-height: 40px;
+            }
+            .newInput{
+                margin: 0 100px 20px 12px;
+            }
+            .firstGetCode,.secondGetCode{
+                border: 1px solid #ccc;
+                width: 100px;
+                float: right;
+                cursor: pointer;
+                background: #e6e6e6;
+                margin-right: 138px;
+                line-height: 40px;
+                text-align: center;
+            }
+            .confirmPsd{
+                width: 75px;
+            }
+            span{
+                display: block;
+                float: left;
+                color: #4d4d4d;
+                margin-bottom: 20px;
+                height: 40px;
+                line-height: 40px;
+                input{
+                    width:260px;
+                    height: 40px;
+                    padding-left: 5px;
+                    border: 1px solid #ccc;
+                }
+                .yzCode{
+                    width: 150px;
+                }
+                .pasInput{
+                    width: 280px;
+                }
+                label{
+                    font-size: 12px;
+                    padding-left: 15px;
+                    color: #ff3e08;
+                    img{
+                        vertical-align: sub;
+                    }
+                }
+            }
+            button{
+                width: 260px;
+                height: 38px;
+                border-radius: 4px;
+                margin: 10px 20px 0 75px;
+                color: #FFF;
+                background: #ff3e08;
+            }
+        }
+    }
+    // 修改邮箱
+    .emailAuthen{
+        padding: 20px 30px;
+        // 邮箱步骤跟踪
+        .search_R{
+            width: 420px;
+            height: 50px;
+            margin: 10px 0 0 20px;
+            padding: 22px 0;
+            .border_one , .border_tow , .border_three{
+                border: 2px solid #fc7b03;
+                width: 130px;
+                margin-left: 5px;
+                float: left;
+                .border_oneL ,.border_oneR ,{
+                    height: 50px;
+                    float: left;
+                    margin: -10px -16px;
+                    position: absolute;
+                    span:nth-child(1){
+                        margin: 0 auto;
+                        display: block;
+                        width: 22px;
+                        height: 22px;
+                        text-align: center;
+                        line-height: 22px;
+                        color: #FFF;
+                        margin-left: 13px;
+                        border-radius: 50px;
+                        background: #fc7b03;
+                    }
+                    span:nth-child(2){
+                        display: block;
+                        color: #fc7b03;
+                        margin-top: 5px;
+                        text-align: center;
+                    }
+                }
+                .border_oneR{
+                    span:nth-child(1),span:nth-child(2){
+                        color: #ccc;
+                    }
+                    span:nth-child(1){
+                        background: #ebebeb;
+                    }
+                }
+                .border_oneR{
+                    height: 50px;
+                    margin: -10px 100px;
+                    position: absolute;
+                }
+            }
+            .border_tow , .border_three{
+                width: 130px;
+                margin-left: 5px;
+                float: left;
+                border:2px solid #ebebeb;
+                .border_oneL ,.border_oneR{
+                    span:nth-child(1){
+                        background: #ebebeb;
+                    }
+                    span:nth-child(2){
+                        color: #ccc;
+                    }
+                }
+                .border_oneR{
+                    margin: -10px 110px;
+                }
+            }
+        }
+        .emailAuthen_T{
+            margin: 20px 0 0 12px;
+            span:nth-child(1){
+                color: #4d4d4d;
+                font-size: 16px;
+                padding-right: 15px;
+            }
+            span:nth-child(2){
+                color: #8c8c8c;
+                font-size: 12px;
+            }
+        }
+        .emailAuthen_C{
+            width: 475px;
+            height: 168px;
+            margin: 30px 0 0 40px;
+            .newTel{
+                width: 150px;
+            }
+            span:nth-child(1),
+            span:nth-child(3){
+                width: 76px;
+                line-height: 40px;
+            }
+            span:nth-child(2){
+                float: none;
+            }
+            .firstGetCode,.secondGetCode{
+                border: 1px solid #ccc;
+                width: 100px;
+                float: right;
+                cursor: pointer;
+                background: #e6e6e6;
+                margin-right: 138px;
+                line-height: 40px;
+                text-align: center;
+            }
+            span{
+                display: block;
+                float: left;
+                color: #4d4d4d;
+                margin-bottom: 20px;
+                height: 40px;
+                input{
+                    width:260px;
+                    height: 40px;
+                    padding-left: 5px;
+                    border: 1px solid #ccc;
+                }
+                .yzCode{
+                    width: 150px;
+                }
+                .pasInput{
+                    width: 280px;
+                }
+                label{
+                    font-size: 12px;
+                    padding-left: 15px;
+                    color: #ff3e08;
+                    img{
+                        vertical-align: sub;
+                    }
+                }
+            }
+            button{
+                width: 130px;
+                height: 38px;
+                border-radius: 4px;
+                margin: 10px 20px 0 75px;
+                color: #FFF;
+                background: #ff3e08;
+            }
+        }
+        .secondMail{
+            width: 475px;
+            height: 168px;
+            margin: 30px 0 0 40px;
+            span:nth-child(1){
+                width: 76px;
+                line-height: 40px;
+            }
+            span{
+                display: block;
+                float: left;
+                color: #4d4d4d;
+                margin-bottom: 20px;
+                height: 40px;
+                input{
+                    width:260px;
+                    height: 40px;
+                    padding-left: 5px;
+                    border: 1px solid #ccc;
+                }
+            }
+            button{
+                width: 130px;
+                height: 38px;
+                border-radius: 4px;
+                margin: 10px 20px 0 75px;
+                color: #FFF;
+                background: #ff3e08;
+            }
+        }
+        .email_success{
+            width: 46px;
+            height: 46px;
+            margin: 40px 0 0 65px;
+        }
+        .emailWord{
+            font-size: 24px;
+            margin-left: 15px;
+            position: relative;
+            top: -16px;
+        }
+        .email_grade_wrap{
+            margin:35px 0 0 80px;
+        }
+        .email_grade{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .grade,.email_grade_img{
+            display: inline-block;
+        }
+        .grade{
+            font-size: 16px;
+            color: #fc7b03;
+        }
+        .email_grade_img{
+            margin-left: 15px;
+        }
+        .email_tips{
+            margin:30px 0 0 20px;
+        }
+    }
+}
+
+//基本信息
+.information{
+    .informationWrap{
+        padding-left: 50px !important;
+    }
+    .right_img{
+        display: none;
+        .selectImg{
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: #e6e6e6;
+            cursor: pointer;
+            color: #666;
+        }
+        .informationR{
+            float: left !important;
+            .information_T{
+                display: block;
+                line-height: 42px !important;
+                color: #8c8c8c !important;
+            }
+            .uploadingImg{
+                width: 200px;
+                height: 200px;
+                // background-image: url(../../assets/images/account-setting/big_head_img.png) no-repeat;
+                background-repeat: no-repeat;
+                background-size: 200px 200px;
+            }
+            .uploadingImg1{
+                width: 200px;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-size: 200px 200px;
+            }
+        }
+    }
+    .right_frame,.right_img{
+        background: #fff;
+        width: 1020px;
+        float: right;
+        h3{
+            height: 46px;
+            line-height: 46px;
+            font-size: 15px;
+            padding-left: 19px;
+            border-bottom: 1px solid #eee;
+        }
+        .informationWrap{
+            height: 450px;
+            padding: 20px 35px;
+            .informationImg{
+                width: 90px;
+                height: 90px;
+                float: left;
+                // background-image: url(../../assets/images/account-setting/default_head.png) no-repeat;
+                background-repeat: no-repeat;
+                background-size: 90px 90px;
+                border-radius: 50%;
+                .yinyingWrap{
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: none;
+                    .yinying{
+                        width:90px;
+                        height:90px; 
+                        color: #fff;
+                        line-height: 20px;
+                        text-align: center;
+                        cursor: pointer;
+                        margin-top: 63px;
+                        background-color: rgba(0,0,0,0.2);
+                        border-radius:0px/45px 0px 90px 90px;
+                    }
+                }
+            }
+            .active{
+                background-image:url('~assets/images/account-setting/big_head_img.png');
+            }
+            .informationR{
+                width: 830px;
+                height: 380px;
+                float: right;
+                .information_T{
+                    font-size: 12px;
+                    line-height: 36px;
+                    color: #fc7b03;
+                }
+                li:nth-child(1),li:nth-child(3),li:nth-child(5),li:nth-child(7),li:nth-child(9){
+                    width: 10%;
+                    text-align: right;
+                }
+                li{
+                    width: 88%;
+                    float: left;
+                    display: block;
+                    height: 40px;
+                    line-height: 40px;
+                    label{
+                        font-size: 12px;
+                        color: #8c8c8c;
+                        padding-left: 10px;
+                        cursor: text;
+                    }
+                    input.liText{
+                        width: 200px;
+                        height: 28px;
+                        border: 1px solid #e0e0e0;
+                        padding-left: 5px;
+                    }
+                    input{
+                        margin-left: 20px;
+                        vertical-align: middle;
+                    }
+                    select:nth-child(1){
+                        margin-left: 20px;
+                    }
+                    select{
+                        margin: 0 5px;
+                    }
+                }
+                .submitBut{
+                    width: 130px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 2px;
+                    background: #ff3e08;
+                    font-size: 16px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 30px 0 0 40px;
+                    text-align: center;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+
+//收货地址
+.receiverAddress{
+    .right_frame{
+        padding-bottom: 40px;
+    }
+    .informationWrap{
+        min-height: 400px;
+        .informationT{
+            display: block;
+            margin-top: 15px;
+            padding-left: 30px;
+            height: 30px;
+            line-height: 30px;
+            color: #4d4d4d;
+            img{
+                vertical-align: middle;
+            }
+            label{
+                color: #666;
+                font-size: 12px;
+                cursor: text;
+                label{
+                    color: #ff3e08;
+                    padding: 0 2px;
+                    cursor: text;
+                }
+            }
+        }
+        .add_btn{
+            height: 30px;
+            width: 130px;
+            cursor: pointer;
+            margin: 10px 0 20px 30px;
+        }
+        .compile{
+            width: 960px;
+            height: 352px;
+            display: none;
+            margin-bottom: 40px;
+            margin: 0 auto;
+            border: 1px solid #ebebeb;
+            padding: 35px 35px 0 50px;
+            div{
+                min-height: 30px;
+                margin-bottom: 10px;
+                span{
+                    display: block;
+                    float: left;
+                    line-height: 30px;
+                    width: 120px;
+                    text-align: right;
+                    label{
+                        color: #df3d3e;
+                        padding-right: 10px;
+                    }
+                }
+                select{
+                    width: 110px;
+                    margin: 0 5px;
+                }
+                .site{
+                    float: left;
+                    width: 740px;
+                    textarea{
+                        border: 1px solid #ccc;
+                        padding: 5px;
+                        resize:none;
+                        width: 400px;
+                        height: 62px;   
+                        margin: 5px;
+                    }
+                    span{
+                        display: block;
+                        color: #8c8c8c;
+                        width: 400px;
+                        font-size: 12px;
+                        text-align: left;
+                        padding-left: 5px;
+                    }
+                }
+                input{
+                    border: 1px solid #ccc;
+                    height: 28px;
+                    width: 220px;
+                    margin-left: 5px;
+                }
+                button:nth-child(1){
+                    width: 80px;
+                    height: 28px;
+                    background: #ff3e08;
+                    border-radius: 4px;
+                    color: white;
+                    border: 1px solid #ff3e08;
+                }
+                button:nth-child(2){
+                    width: 80px;
+                    height: 28px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    margin: 20px 0 0 20px;
+                    color: #4d4d4d;
+                    background: #fff;
+                }
+            }
+        }
+        
+        .receiverlist{
+            width: 960px;
+            min-height: 50px;
+            margin: 20px auto;
+            overflow:hidden;
+            border: 1px solid #ebebeb;
+            li:nth-child(1){
+                width: 100px;
+            }
+            li:nth-child(2){
+                width: 450px;
+            }
+            li:nth-child(3){
+                width: 180px;
+            }
+            li:nth-child(4){
+                width: 225px;
+                cursor: pointer;
+                span{
+                    padding: 0 5px;
+                    color: #359af8;;
+                }
+                span:nth-child(2){
+                    border-left: 2px solid #359af8;
+                    border-right: 2px solid #359af8;
+                }
+            }
+            li{
+                display: block;
+                float: left;
+                line-height: 18px;
+                padding: 16px 20px;
+                
+            }
+        }
+    }
+}
+
+
+// input file 样式修改
+.a-upload {
+    padding: 4px 10px;
+    height: 30px;
+    width: auto;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+// 手机号修改成功后页面
+.tel_success{
+    width: 36px;
+    height: 36px;
+    margin: 30px 0 0 40px;
+}
+.successWord{
+    font-size: 16px;
+    margin-left: 20px;
+    position: relative;
+    top: -11px;
+}
+.toPage{
+    margin: 20px 0 0 40px;   
+}
+
+// 邮箱的模态窗口
+.emailBox{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    background-color:rgba(0, 0, 0, 0.4); 
+    overflow: hidden;
+}
+.box{
+    width: 480px;
+    height: 278px;
+    background-color: #fff;
+    margin: 300px auto;
+}
+.title{
+    height: 40px;
+    border-bottom: 1px solid #E8E8E9;
+    margin-left: 19px;
+    line-height: 39px;
+    font-size: 16px;
+    background: #FCFCFD;
+}
+.del{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("../../assets/images/tabBar/delet.png");
+    background-size: 12px 12px;
+    float: right;
+    margin: 13px 20px 0 0; 
+    cursor: pointer;
+}
+.boxContent,.boxContent2{
+    margin: 50px 100px 0 88px;
+    font-size: 16px;
+    line-height: 15px;
+}
+.boxContent2{
+    margin: 20px 0px 0 170px;
+}
+.boxBtn{
+    width: 288px;
+    height: 40px;
+    background: #ff3e08;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin: 45px 0 0 88px;
+}
+.star_li{
+    padding-left: 20px;
+}

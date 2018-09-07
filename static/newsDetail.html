@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style>
+		img{width: 100%;}
+		html,body{
+			height: 100%;
+		}
+	</style>
+</head>
+	<body>
+		<div id="newsDetail"></div>
+		<script>
+			var id = location.search.substring(4);
+			var env = location.search.substring(location.search.indexOf('&')+1);
+		//	console.log(location.search,env.split('=')[1],'哈哈哈')
+			var ajax = new XMLHttpRequest();
+			if(ajax){
+				//==============================是否涉及跨域?
+				// var url = ; 
+				
+
+				if(env.split('=')[1]=='test'){
+					//console.log('进来了吗')
+					var url = "http://112.74.135.230:3215"
+				}else{
+					//console.log('正式')
+					var url = 'http://api.wqbol.com'
+				} 
+				ajax.open('get',`${url}/News/GetNewsById?id=`+id);
+			}
+			ajax.onreadystatechange = function () {
+				if ( ajax.readyState == 4 ) {
+					if ( ajax.status == 200 ) { 
+						if(ajax.responseText){
+							document.getElementById("newsDetail").innerHTML = JSON.parse(ajax.response).data.Content;
+							document.getElementById("newsDetail").style.height
+						}
+					}
+				}
+			}
+			ajax.send();
+		</script>
+	</body>
+</html>
+
+
+
+ 
